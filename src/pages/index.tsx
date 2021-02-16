@@ -1,65 +1,27 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import React from 'react';
 
-export default function Home() {
+import { withTranslation } from '../../i18n';
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+const Index = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <div className="mb-20 py-10">
+      <AutoplaySlider play={true} interval={4000} animation="cubeAnimation">
+        <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
+        <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
+        <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
+      </AutoplaySlider>
     </div>
   );
-}
+};
+Index.getInitialProps = async () => ({
+  namespacesRequired: ['index', 'common'],
+});
+
+export default withTranslation('index')(Index);

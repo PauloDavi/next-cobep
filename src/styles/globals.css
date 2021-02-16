@@ -1,16 +1,20 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+body .awssld {
+  --slider-height-percentage: 50%;
+  --slider-transition-duration: 700ms;
+  --organic-arrow-thickness: 7px;
+  --organic-arrow-border-radius: 30px;
+  --organic-arrow-height: 50px;
+  --organic-arrow-color: #ff9800;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #e68600;
+  --control-bullet-active-color: #ff9800;
+  --loader-bar-color: transparent;
+  --loader-bar-height: 1px;
 }
