@@ -5,7 +5,7 @@ const pages = [
   },
   {
     menuTitleTranslate: 'O Congresso',
-    pageURL: '/',
+    pageURL: '/call-for-paper',
   },
   {
     menuTitleTranslate: 'Autores/Revisores',

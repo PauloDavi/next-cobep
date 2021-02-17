@@ -74,4 +74,5 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   };
 };
+
 export default appWithTranslation(MyApp);

@@ -206,45 +206,14 @@ const Home = ({ t }: { readonly t: TFunction }) => {
           spacing={2}
           className={clsx(classes.callForPapera, classes.bodyWithPadding)}
         >
-          <Grid item xs={12} md={8} lg={9} xl={10} className={classes.growDiv}>
+          <Grid item xs={12} className={classes.growDiv}>
             <motion.div
               animate={{ x: [-200, 0], opacity: [0, 1] }}
               transition={{ ease: 'easeOut', duration: 1.5 }}
             >
               <div>
-                <Typography
-                  className={classes.mainTitle}
-                  variant="h3"
-                  color="primary"
-                >
-                  {t('callOfWorks')}
-                </Typography>
                 <Typography>{t('descriptionText')}</Typography>
               </div>
-            </motion.div>
-          </Grid>
-          <Grid item xs={12} md={4} lg={3} xl={2}>
-            <motion.div
-              animate={{ x: [200, 0], opacity: [0, 1] }}
-              transition={{ ease: 'backOut', duration: 1.5 }}
-            >
-              <Card className={classes.imageCard}>
-                <Typography className={classes.dateText} variant="h5">
-                  {t('importantDates')}
-                </Typography>
-                <Typography variant="subtitle1">
-                  <strong>{t('textDate1')}</strong> {t('date1')}
-                  <br />
-                  <strong>{t('textDate2')}</strong> {t('date2')}
-                  <br />
-                  <strong>{t('textDate3')}</strong> {t('date3')}
-                  <br />
-                  <strong>{t('textDate4')}</strong> {t('date4')}
-                  <br />
-                  <strong>{t('textDate5')}</strong> {t('date5')}
-                  <br />
-                </Typography>
-              </Card>
             </motion.div>
           </Grid>
         </Grid>
@@ -252,7 +221,7 @@ const Home = ({ t }: { readonly t: TFunction }) => {
           animate={{ x: [-200, 0], opacity: [0, 1] }}
           transition={{ ease: 'easeOut', duration: 1.5 }}
         >
-          <div className={classes.divSecondaryText}>
+          <div className={clsx(classes.divSecondaryText, 'mb-5')}>
             <Typography className={classes.primaryText} variant="h4">
               {t('topicTitle')}
             </Typography>
@@ -266,84 +235,98 @@ const Home = ({ t }: { readonly t: TFunction }) => {
           variants={list}
           className={classes.fontList}
         >
-          <Grid container>
-            <Grid item className={classes.firstList} xs={12} md={6}>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 2 }}
-              >
-                {t('topic1')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 2.2 }}
-              >
-                {t('topic2')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 2.4 }}
-              >
-                {t('topic3')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 2.6 }}
-              >
-                {t('topic4')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 2.8 }}
-              >
-                {t('topic5')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 3 }}
-              >
-                {t('topic6')}
-              </motion.li>
+          <div className="px-8">
+            <Grid container>
+              <Grid item className={classes.firstList} xs={12} md={6}>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 2 }}
+                >
+                  {t('topic1')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 2.2 }}
+                >
+                  {t('topic2')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 2.4 }}
+                >
+                  {t('topic3')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 2.6 }}
+                >
+                  {t('topic4')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 2.8 }}
+                >
+                  {t('topic5')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 3 }}
+                >
+                  {t('topic6')}
+                </motion.li>
+              </Grid>
+              <Grid className={classes.secondList} item xs={12} md={6}>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 3.2 }}
+                >
+                  {t('topic7')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 3.4 }}
+                >
+                  {t('topic8')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 3.6 }}
+                >
+                  {t('topic9')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 3.8 }}
+                >
+                  {t('topic10')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 4 }}
+                >
+                  {t('topic11')}
+                </motion.li>
+                <motion.li
+                  className="list-disc"
+                  variants={item}
+                  transition={{ ease: 'anticipate', duration: 4.2 }}
+                >
+                  {t('topic12')}
+                </motion.li>
+              </Grid>
             </Grid>
-            <Grid className={classes.secondList} item xs={12} md={6}>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 3.2 }}
-              >
-                {t('topic7')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 3.4 }}
-              >
-                {t('topic8')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 3.6 }}
-              >
-                {t('topic9')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 3.8 }}
-              >
-                {t('topic10')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 4 }}
-              >
-                {t('topic11')}
-              </motion.li>
-              <motion.li
-                variants={item}
-                transition={{ ease: 'anticipate', duration: 4.2 }}
-              >
-                {t('topic12')}
-              </motion.li>
-            </Grid>
-          </Grid>
+          </div>
         </motion.ul>
       </div>
     </div>

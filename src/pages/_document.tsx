@@ -17,6 +17,7 @@ class MyDocument extends Document<DocumentProps> {
     return (
       <Html>
         <Head>
+          <title>COBEP</title>
           <link
             rel="alternate"
             href="https://pro-cobeb.vercel.app/"

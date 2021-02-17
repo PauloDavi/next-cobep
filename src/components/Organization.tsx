@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 
 import { withTranslation } from '../../i18n';
 import { TFunction } from 'next-i18next';
+import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -83,7 +84,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const organization = ({ t }: { readonly t: TFunction }) => {
+const Organization = ({ t }: { readonly t: TFunction }) => {
   const classes = useStyles();
 
   return (
@@ -194,8 +195,12 @@ const organization = ({ t }: { readonly t: TFunction }) => {
   );
 };
 
-organization.getInitialProps = async () => ({
-  namespacesRequired: ['organization'],
-});
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['organization'],
+    },
+  };
+};
 
-export default withTranslation('organization')(organization);
+export default withTranslation('organization')(Organization);

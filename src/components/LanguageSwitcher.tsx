@@ -16,6 +16,7 @@ import { useRouter } from 'next/router';
 
 import { i18n, withTranslation } from '../../i18n';
 import { TFunction } from 'next-i18next';
+import { GetStaticProps } from 'next';
 
 const languages = ['en', 'pt', 'es'];
 
@@ -115,8 +116,12 @@ const LanguageSwitcher = ({ t }: { readonly t: TFunction }): JSX.Element => {
   );
 };
 
-LanguageSwitcher.getInitialProps = async () => ({
-  namespacesRequired: ['languageSwitcher'],
-});
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['languageSwitcher'],
+    },
+  };
+};
 
 export default withTranslation('languageSwitcher')(LanguageSwitcher);

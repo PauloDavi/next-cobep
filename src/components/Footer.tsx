@@ -6,6 +6,7 @@ import {
   Typography,
   IconButton,
   Link,
+  Hidden,
 } from '@material-ui/core';
 
 import clsx from 'clsx';
@@ -20,12 +21,13 @@ import { motion } from 'framer-motion';
 
 import { withTranslation } from '../../i18n';
 import { TFunction } from 'next-i18next';
+import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainDiv: {
       boxShadow: theme.shadows[19],
-      backgroundImage: `linear-gradient(to right,  ${theme.palette.primary.main}, ${theme.palette.primary[800]}, ${theme.palette.secondary.main})`,
+      backgroundImage: `linear-gradient(to right,  ${theme.palette.primary.main}, ${theme.palette.primary.dark}, ${theme.palette.secondary.main})`,
     },
     separator: {
       height: 5,
@@ -145,38 +147,37 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
                 width={150}
                 height={150}
               />
-              <div
-                className={clsx(
-                  classes.flexColumn,
-                  classes.alignCenter,
-                  classes.marginLeft10
-                )}
-              >
-                <Typography
-                  className={classes.mainTitle}
-                  variant="h2"
-                  align="left"
-                  color="inherit"
+              <Hidden xsDown>
+                <div
+                  className={clsx(
+                    classes.flexColumn,
+                    classes.alignCenter,
+                    classes.marginLeft10
+                  )}
                 >
-                  {t('title')}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  className={classes.subsubTitle}
-                  align="left"
-                  color="inherit"
-                >
-                  {t('subtitle')}
-                </Typography>
-              </div>
+                  <Typography
+                    className={classes.mainTitle}
+                    variant="h2"
+                    align="left"
+                    color="inherit"
+                  >
+                    {t('title')}
+                  </Typography>
+                </div>
+              </Hidden>
             </div>
-            <div className={clsx(classes.heightFull, classes.flexColumn)}>
+            <div
+              className={clsx(classes.heightFull, classes.flexColumn, 'flex')}
+            >
               <Typography className={classes.footerTextBold}>
                 Contato:
               </Typography>
               <div className={clsx(classes.flexRow, classes.alignCenter)}>
                 <Typography
-                  className={clsx(classes.contactUsText, classes.textLabel)}
+                  className={clsx(
+                    classes.contactUsText,
+                    classes.contactUsTextBold
+                  )}
                 >
                   E-mail:
                 </Typography>
@@ -190,7 +191,10 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
               </div>
               <div className={clsx(classes.flexRow, classes)}>
                 <Typography
-                  className={clsx(classes.contactUsText, classes.textLabel)}
+                  className={clsx(
+                    classes.contactUsText,
+                    classes.contactUsTextBold
+                  )}
                 >
                   Fone:
                 </Typography>
@@ -199,6 +203,32 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
                 >
                   (83) 99999-9999
                 </Typography>
+              </div>
+              <div className="mx-auto">
+                <IconButton>
+                  <Link
+                    href="https://www.instagram.com/cobep2021/"
+                    target="_blank"
+                  >
+                    <InstagramIcon className={classes.icons} />
+                  </Link>
+                </IconButton>
+                <IconButton>
+                  <Link
+                    href="https://www.facebook.com/cobep2021"
+                    target="_blank"
+                  >
+                    <FacebookIcon className={classes.icons} />
+                  </Link>
+                </IconButton>
+                <IconButton>
+                  <Link
+                    href="https://www.linkedin.com/company/sobraep-associação-brasileira-de-eletrônica-de-potência/"
+                    target="_blank"
+                  >
+                    <LinkedInIcon className={classes.icons} />
+                  </Link>
+                </IconButton>
               </div>
             </div>
           </div>
@@ -209,29 +239,6 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
           transition={{ ease: 'easeOut', duration: 1.5 }}
         >
           <div className={classes.divFooter}>
-            <div>
-              <IconButton>
-                <Link
-                  href="https://www.instagram.com/cobep2021/"
-                  target="_blank"
-                >
-                  <InstagramIcon className={classes.icons} fontSize="large" />
-                </Link>
-              </IconButton>
-              <IconButton>
-                <Link href="https://www.facebook.com/cobep2021" target="_blank">
-                  <FacebookIcon className={classes.icons} fontSize="large" />
-                </Link>
-              </IconButton>
-              <IconButton>
-                <Link
-                  href="https://www.linkedin.com/company/sobraep-associação-brasileira-de-eletrônica-de-potência/"
-                  target="_blank"
-                >
-                  <LinkedInIcon className={classes.icons} fontSize="large" />
-                </Link>
-              </IconButton>
-            </div>
             <div className={classes.divFooterText}>
               <Typography className={classes.footerTextBold}>
                 {t('title')}
@@ -247,8 +254,12 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
   );
 };
 
-Footer.getInitialProps = async () => ({
-  namespacesRequired: ['footer'],
-});
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['footer'],
+    },
+  };
+};
 
 export default withTranslation('footer')(Footer);

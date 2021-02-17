@@ -9,6 +9,10 @@ module.exports = {
     localeSubpaths,
   },
 
+  images: {
+    domains: ['www.ieee-ecce.org'],
+  },
+
   esModule: true,
 
   i18n: {

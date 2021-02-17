@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body .focusframe {
+  :focus {
+    outline: none !important;
+  }
+}
+
 body .awssld {
   --slider-height-percentage: 50%;
   --slider-transition-duration: 700ms;

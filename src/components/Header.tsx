@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 /* eslint-disable multiline-ternary */
 import React, { useState } from 'react';
 import {
@@ -12,8 +13,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Menu,
-  MenuItem,
   useMediaQuery,
   Drawer,
   List,
@@ -22,15 +21,15 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  Popover,
 } from '@material-ui/core';
 
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import MenuIcon from '@material-ui/icons/Menu';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
-import ExpandLessOutlinedIcon from '@material-ui/icons/ExpandLessOutlined';
+import MyMenu from './MyMenu';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -39,6 +38,7 @@ import { TFunction } from 'next-i18next';
 import { withTranslation } from '../../i18n';
 
 import pages from './pages';
+import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -113,25 +113,10 @@ const Header = ({ t }: { readonly t: TFunction }) => {
 
   const trigger = useScrollTrigger();
 
-  const [anchorElements, setAnchorElements] = useState<Element[]>(
-    // eslint-disable-next-line prefer-spread
-    Array.apply(null, Array(pages.filter((e) => !!e.children).length))
-  );
-  const openMenus = anchorElements.map((item) => Boolean(item));
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  const handleMenus = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    index: number
-  ) => {
-    setAnchorElements((items) =>
-      items.map((e, i) => (index === i ? event.currentTarget : e))
-    );
-  };
-
-  const handleMenusClick = (pageURL: string, index: number) => {
+  const handleMenusClick = (pageURL: string) => {
     router.push(pageURL);
-    setAnchorElements((items) => items.map((e, i) => (index === i ? null : e)));
   };
 
   const handleButtonClick = (pageURL: string) => {
@@ -236,64 +221,10 @@ const Header = ({ t }: { readonly t: TFunction }) => {
                 if (children) {
                   return (
                     <div key={menuTitleTranslate}>
-                      <Button
-                        variant="text"
-                        color="inherit"
-                        className={classes.pageButtons}
-                        aria-haspopup="true"
-                        onClick={(e) => handleMenus(e, index)}
-                      >
-                        <Typography>{t(menuTitleTranslate)}</Typography>
-                        {openMenus[index] || false ? (
-                          <ExpandLessOutlinedIcon />
-                        ) : (
-                          <ExpandMoreOutlinedIcon />
-                        )}
-                      </Button>
-                      <Popover
-                        anchorEl={anchorElements[index]}
-                        open={openMenus[index] || false}
-                        onClose={() =>
-                          setAnchorElements((items) =>
-                            items.map((item, indexElement) =>
-                              indexElement === index ? null : item
-                            )
-                          )
-                        }
-                        anchorOrigin={{
-                          vertical: 'bottom',
-                          horizontal: 'center',
-                        }}
-                        transformOrigin={{
-                          vertical: 'top',
-                          horizontal: 'center',
-                        }}
-                      >
-                        {children.map((child) => (
-                          <MenuItem
-                            key={child.menuTitleTranslate}
-                            onClick={() =>
-                              handleMenusClick(child.pageURL, index)
-                            }
-                          >
-                            <Typography>
-                              {t(child.menuTitleTranslate)}
-                            </Typography>
-                          </MenuItem>
-                        ))}
-                      </Popover>
-                      <Menu
-                        anchorEl={anchorElements[index]}
-                        open={openMenus[index] || false}
-                        onClose={() =>
-                          setAnchorElements((items) =>
-                            items.map((item, indexElement) =>
-                              indexElement === index ? null : item
-                            )
-                          )
-                        }
-                        keepMounted
-                      ></Menu>
+                      <MyMenu
+                        children={children}
+                        menuTitleTranslate={menuTitleTranslate}
+                      />
                     </div>
                   );
                 } else {
@@ -302,9 +233,8 @@ const Header = ({ t }: { readonly t: TFunction }) => {
                       key={menuTitleTranslate}
                       variant="text"
                       color="inherit"
-                      onClick={() => handleButtonClick(pageURL)}
                     >
-                      <Typography>{t(menuTitleTranslate)}</Typography>
+                      <Link href={pageURL || '/'}>{t(menuTitleTranslate)}</Link>
                     </Button>
                   );
                 }
@@ -318,8 +248,12 @@ const Header = ({ t }: { readonly t: TFunction }) => {
   );
 };
 
-Header.getInitialProps = async () => ({
-  namespacesRequired: ['header'],
-});
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['header'],
+    },
+  };
+};
 
 export default withTranslation('header')(Header);
