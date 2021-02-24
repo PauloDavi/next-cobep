@@ -10,6 +10,7 @@ import {
 import Image from 'next/image';
 
 import Head from 'next/head';
+import { withTranslation } from '../../i18n';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -31,7 +32,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-const page404: React.FC = () => {
+const Page404 = () => {
   const classes = useStyles();
 
   return (
@@ -53,4 +54,4 @@ const page404: React.FC = () => {
   );
 };
 
-export default page404;
+export default withTranslation('common')(Page404);

@@ -37,8 +37,40 @@ import { useRouter } from 'next/router';
 import { TFunction } from 'next-i18next';
 import { withTranslation } from '../../i18n';
 
-import pages from './pages';
 import { GetStaticProps } from 'next';
+
+const pages = [
+  {
+    menuTitleTranslate: 'inicio',
+    pageURL: '/',
+  },
+  {
+    menuTitleTranslate: 'O Congresso',
+    pageURL: '/call-for-paper',
+  },
+  {
+    menuTitleTranslate: 'Autores/Revisores',
+    index: 0,
+    children: [
+      {
+        menuTitleTranslate: 'Dates',
+        pageURL: '/dates',
+      },
+      {
+        menuTitleTranslate: 'Modelos',
+        pageURL: '/models',
+      },
+    ],
+  },
+  {
+    menuTitleTranslate: 'Sponsors',
+    pageURL: '/sponsors',
+  },
+  {
+    menuTitleTranslate: 'FAQ',
+    pageURL: '/',
+  },
+];
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { GetStaticProps } from 'next';
-import Router from 'next/router';
-import NProgress from 'nprogress';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {
   ThemeProvider,
@@ -26,6 +24,8 @@ import rtl from 'jss-rtl';
 
 import '../styles/globals.css';
 
+import Head from 'next/head';
+
 const jss = create({
   ...jssPreset(),
   plugins: [...jssPreset().plugins, jssExtend(), rtl()],
@@ -33,11 +33,7 @@ const jss = create({
 
 const generateClassName = createGenerateClassName();
 
-Router.events.on('routeChangeStart', () => NProgress.start());
-Router.events.on('routeChangeComplete', () => NProgress.done());
-Router.events.on('routeChangeError', () => NProgress.done());
-
-const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -52,7 +48,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
         <AnimatePresence exitBeforeEnter>
           <Header key="header" />
           <CssBaseline key="cssBaseLine" />
-          <Component {...pageProps} key={router.route} />
+          <div className="mb-auto">
+            <Head>
+              <title>COBEP</title>
+            </Head>
+            <Component {...pageProps} />
+          </div>
           <Footer key="footer" />
           <ScrollToTop style={{ bottom: 0, right: 30 }} showUnder={160}>
             <Tooltip title="Voltar ao inicio">

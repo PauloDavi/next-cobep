@@ -172,24 +172,6 @@ const Organization = ({ t }: { readonly t: TFunction }) => {
             />
           </motion.div>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={3}
-          style={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <motion.div
-            animate={{ x: [-1000, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
-          >
-            <Image
-              src="/images/logo_IEEE.png"
-              alt="Logo IEEE"
-              width={95}
-              height={100}
-            />
-          </motion.div>
-        </Grid>
       </Grid>
     </div>
   );

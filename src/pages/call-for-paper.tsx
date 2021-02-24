@@ -15,7 +15,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { TFunction } from 'next-i18next';
-import { withTranslation } from '../../i18n';
+import { useTranslation, withTranslation } from '../../i18n';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -135,7 +135,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Home = ({ t }: { readonly t: TFunction }) => {
+const CallForPaper = () => {
+  const { t } = useTranslation('index');
+
   const classes = useStyles();
 
   const list = {
@@ -332,8 +334,8 @@ const Home = ({ t }: { readonly t: TFunction }) => {
     </div>
   );
 };
-Home.getInitialProps = async () => ({
+CallForPaper.getInitialProps = async () => ({
   namespacesRequired: ['home', 'common'],
 });
 
-export default withTranslation('home')(Home);
+export default withTranslation('home')(CallForPaper);

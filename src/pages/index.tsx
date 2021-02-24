@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { withTranslation } from '../../i18n';
+import { useTranslation, withTranslation } from '../../i18n';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 
@@ -18,6 +18,9 @@ import {
 } from '@material-ui/core';
 import clsx from 'clsx';
 
+import Organization from '../components/Organization';
+import TechnicalSupport from '../components/TechnicalSupport';
+
 import Image from 'next/image';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -30,11 +33,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Index = () => {
+const Home = () => {
+  const { t } = useTranslation('index');
+
   const classes = useStyles();
 
   return (
-    <div className="mb-10">
+    <div>
       <div
         className="w-full"
         style={{ backgroundColor: 'rgba(255, 153, 0, 0.9)' }}
@@ -196,7 +201,7 @@ const Index = () => {
       </div>
 
       <div
-        className="flex justify-center mt-10 w-full px-8 py-12"
+        className="flex justify-center mt-10 w-full mb-10 px-8 py-12"
         style={{ backgroundColor: 'rgba(41, 98, 255, 0.8)' }}
       >
         <div className="flex flex-row">
@@ -240,11 +245,15 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <TechnicalSupport />
+      <Organization />
     </div>
   );
 };
-Index.getInitialProps = async () => ({
-  namespacesRequired: ['index', 'common'],
+
+Home.getInitialProps = async () => ({
+  namespacesRequired: ['index'],
 });
 
-export default withTranslation('index')(Index);
+export default withTranslation('common')(Home);

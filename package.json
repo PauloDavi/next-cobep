@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "static": "next build && next export -o build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -24,12 +25,15 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@types/next-nprogress": "^1.4.0",
     "clsx": "^1.1.1",
     "framer-motion": "^3.3.0",
     "jss-plugin-extend": "^10.5.1",
     "jss-rtl": "^0.3.0",
     "next": "10.0.7",
     "next-i18next": "^7.0.1",
+    "next-nprogress": "^1.4.0",
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-awesome-slider": "^4.1.0",
