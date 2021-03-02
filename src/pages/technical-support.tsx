@@ -34,7 +34,6 @@ const supports = [
     people: [
       {
         name: 'Victor Melo',
-        locale: 'Universidade Federal da Paraiba, UFPB',
         email: 'victor@cear.ufpb.br',
       },
     ],

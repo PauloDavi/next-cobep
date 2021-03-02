@@ -9,7 +9,6 @@ import {
 import Image from 'next/image';
 
 import Head from 'next/head';
-import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -51,14 +50,6 @@ const Page404 = () => {
       </Container>
     </>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['common'],
-    },
-  };
 };
 
 export default Page404;
