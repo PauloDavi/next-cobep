@@ -1,11 +1,10 @@
 {
-  "inicio": "Hogar",
-  "O Congresso": "El Congreso",
-  "Autores/Revisores": "Autores/Revisores",
-  "Dates": "Dato Importante",
-  "Modelos": "Modelos",
-  "Programacao": "Programación",
-  "Patrocinadores": "Patrocinadores",
-  "Contato": "Contacto",
-  "FAQ": "FAQ"
+  "HOME_LABEL": "Casa",
+  "REVIEWING_AUTHORS_LABEL": "Autores / Revisores",
+  "CALL_FOR_PAPERS_LABEL": "Solicitud de ponencias",
+  "DATE_LABEL": "Fechas",
+  "MODELOS_LABEL": "Modelos",
+  "TECHNICAL_SUPPORT_LABEL": "Organización",
+  "SPONSORS_LABEL": "Partidarios",
+  "FAQ_LABEL": "Preguntas frecuentes"
 }

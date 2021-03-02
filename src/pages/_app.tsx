@@ -12,7 +12,7 @@ import { create } from 'jss';
 import { AnimatePresence } from 'framer-motion';
 import ScrollToTop from 'react-scroll-up';
 
-import { appWithTranslation } from '../../i18n';
+import { appWithTranslation, useTranslation } from '../../i18n';
 import { Tooltip } from '@material-ui/core';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -34,6 +34,8 @@ const jss = create({
 const generateClassName = createGenerateClassName();
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const { t } = useTranslation('common');
+
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -56,7 +58,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           </div>
           <Footer key="footer" />
           <ScrollToTop style={{ bottom: 0, right: 30 }} showUnder={160}>
-            <Tooltip title="Voltar ao inicio">
+            <Tooltip title={t('BACK_TO_BEGIN') as string}>
               <div className="bg-gray-800 bg-opacity-75 p-1 rounded-t-md">
                 <ExpandLessIcon color="primary" />
               </div>

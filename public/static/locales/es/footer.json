@@ -1,5 +1,7 @@
 {
-  "organization": "Organización:",
-  "title": "COBEP",
-  "subtitle": "Congreso Brasileño de Electrónica de Potencia"
+  "TITLE LABEL": "COBEP",
+  "SUBTITLE LABEL": "Congreso Brasileño de Electrónica de Potencia",
+  "CONTACT_LABEL": "Contacto:",
+  "EMAIL_LABEL": "E-Mail:",
+  "FONE_LABEL": "Teléfono:"
 }

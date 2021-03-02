@@ -1,5 +1,10 @@
 {
-  "organization": "Organização:",
-  "title": "COBEP",
-  "subtitle": "Congreso Brasileiro de Eletrônica de Potencia"
+  "PAGE_TITLE_LABEL": "COBEP 2021 - Apoiadores",
+  "SPONSORS_LABEL": "Apoiadores",
+  "GOLD_MEDAL_LABEL": "Medalha de Ouro",
+  "GOLD_LABEL": "Ouro",
+  "SILVER_MEDAL_LABEL": "Medalha de Prata",
+  "SILVER_LABEL": "Prata",
+  "BRONZE_MEDAL_LABEL": "Medalha de Bronze",
+  "BRONZE_LABEL": "Bronze"
 }

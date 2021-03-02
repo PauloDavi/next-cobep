@@ -1,11 +1,10 @@
 {
-  "inicio": "Início",
-  "O Congresso": "O Congresso",
-  "Autores/Revisores": "Autores/Revisores",
-  "Dates": "Datas Importantes",
-  "Modelos": "Modelos",
-  "Programacao": "Programação",
-  "Patrocinadores": "Patrocinadores",
-  "Contato": "contato",
-  "FAQ": "FAQ"
+  "HOME_LABEL": "Início",
+  "REVIEWING_AUTHORS_LABEL": "Autores/Revisores",
+  "CALL_FOR_PAPERS_LABEL": "Call For Papers",
+  "DATE_LABEL": "Datas",
+  "MODELOS_LABEL": "Modelos",
+  "TECHNICAL_SUPPORT_LABEL": "Organização",
+  "SPONSORS_LABEL": "Apoiadores",
+  "FAQ_LABEL": "FAQ"
 }

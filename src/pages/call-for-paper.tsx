@@ -14,8 +14,8 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import { TFunction } from 'next-i18next';
-import { useTranslation, withTranslation } from '../../i18n';
+import { useTranslation } from '../../i18n';
+import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -123,11 +123,13 @@ const useStyles = makeStyles((theme: Theme) =>
       'overflow-x': 'hidden',
     },
     firstList: {
+      padding: '10px 20px',
       [theme.breakpoints.up('md')]: {
         paddingRight: 15,
       },
     },
     secondList: {
+      padding: '10px 20px',
       [theme.breakpoints.up('md')]: {
         paddingLeft: 15,
       },
@@ -136,7 +138,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const CallForPaper = () => {
-  const { t } = useTranslation('index');
+  const { t } = useTranslation('callForPaper');
 
   const classes = useStyles();
 
@@ -153,7 +155,7 @@ const CallForPaper = () => {
   return (
     <div className={classes.overflow}>
       <Head>
-        <title>{t('pageTitle')}</title>
+        <title>{t('PAGE_TITLE_LABEL')}</title>
       </Head>
 
       <div className={classes.title}>
@@ -177,7 +179,7 @@ const CallForPaper = () => {
                   align="left"
                   color="inherit"
                 >
-                  {t('title')}
+                  {t('TITLE_LABEL')}
                 </Typography>
                 <Typography
                   variant="subtitle1"
@@ -185,7 +187,7 @@ const CallForPaper = () => {
                   align="left"
                   color="inherit"
                 >
-                  {t('subtitle')}
+                  {t('SUBTITLE_LABEL')}
                 </Typography>
               </div>
             </div>
@@ -197,7 +199,7 @@ const CallForPaper = () => {
               align="left"
               color="inherit"
             >
-              <strong>{t('subsubtitle')}</strong>
+              <strong>{t('SUB_SUB_TITLE_LABEL')}</strong>
             </Typography>
           </div>
         </motion.div>
@@ -208,14 +210,45 @@ const CallForPaper = () => {
           spacing={2}
           className={clsx(classes.callForPapera, classes.bodyWithPadding)}
         >
-          <Grid item xs={12} className={classes.growDiv}>
+          <Grid item xs={12} md={8} lg={9} xl={10} className={classes.growDiv}>
             <motion.div
               animate={{ x: [-200, 0], opacity: [0, 1] }}
               transition={{ ease: 'easeOut', duration: 1.5 }}
             >
               <div>
-                <Typography>{t('descriptionText')}</Typography>
+                <Typography
+                  className={classes.mainTitle}
+                  variant="h3"
+                  color="primary"
+                >
+                  {t('CALL_FOR_WOKS_LABEL')}
+                </Typography>
+                <Typography>{t('DESCRIPTION_TEXT_LABEL')}</Typography>
               </div>
+            </motion.div>
+          </Grid>
+          <Grid item xs={12} md={4} lg={3} xl={2}>
+            <motion.div
+              animate={{ x: [200, 0], opacity: [0, 1] }}
+              transition={{ ease: 'backOut', duration: 1.5 }}
+            >
+              <Card className={classes.imageCard}>
+                <Typography className={classes.dateText} variant="h5">
+                  {t('IMPORTANT_DATES_LABEL')}
+                </Typography>
+                <Typography variant="subtitle1">
+                  <strong>{t('TEXT_DATE_1_LABEL')}</strong> {t('DATE_1_LABEL')}
+                  <br />
+                  <strong>{t('TEXT_DATE_2_LABEL')}</strong> {t('DATE_2_LABEL')}
+                  <br />
+                  <strong>{t('TEXT_DATE_3_LABEL')}</strong> {t('DATE_3_LABEL')}
+                  <br />
+                  <strong>{t('TEXT_DATE_4_LABEL')}</strong> {t('DATE_4_LABEL')}
+                  <br />
+                  <strong>{t('TEXT_DATE_5_LABEL')}</strong> {t('DATE_5_LABEL')}
+                  <br />
+                </Typography>
+              </Card>
             </motion.div>
           </Grid>
         </Grid>
@@ -223,9 +256,9 @@ const CallForPaper = () => {
           animate={{ x: [-200, 0], opacity: [0, 1] }}
           transition={{ ease: 'easeOut', duration: 1.5 }}
         >
-          <div className={clsx(classes.divSecondaryText, 'mb-5')}>
+          <div className={classes.divSecondaryText}>
             <Typography className={classes.primaryText} variant="h4">
-              {t('topicTitle')}
+              {t('TOPIC_TITLE_LABEL')}
             </Typography>
           </div>
         </motion.div>
@@ -235,107 +268,98 @@ const CallForPaper = () => {
           animate="visible"
           transition={{ duration: 2 }}
           variants={list}
-          className={classes.fontList}
+          className={clsx(classes.fontList, 'list-inside list-disc')}
         >
-          <div className="px-8">
-            <Grid container>
-              <Grid item className={classes.firstList} xs={12} md={6}>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 2 }}
-                >
-                  {t('topic1')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 2.2 }}
-                >
-                  {t('topic2')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 2.4 }}
-                >
-                  {t('topic3')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 2.6 }}
-                >
-                  {t('topic4')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 2.8 }}
-                >
-                  {t('topic5')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 3 }}
-                >
-                  {t('topic6')}
-                </motion.li>
-              </Grid>
-              <Grid className={classes.secondList} item xs={12} md={6}>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 3.2 }}
-                >
-                  {t('topic7')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 3.4 }}
-                >
-                  {t('topic8')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 3.6 }}
-                >
-                  {t('topic9')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 3.8 }}
-                >
-                  {t('topic10')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 4 }}
-                >
-                  {t('topic11')}
-                </motion.li>
-                <motion.li
-                  className="list-disc"
-                  variants={item}
-                  transition={{ ease: 'anticipate', duration: 4.2 }}
-                >
-                  {t('topic12')}
-                </motion.li>
-              </Grid>
+          <Grid container>
+            <Grid item className={classes.firstList} xs={12} md={6}>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 2 }}
+              >
+                {t('TOPIC_1_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 2.2 }}
+              >
+                {t('TOPIC_2_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 2.4 }}
+              >
+                {t('TOPIC_3_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 2.6 }}
+              >
+                {t('TOPIC_4_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 2.8 }}
+              >
+                {t('TOPIC_5_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 3 }}
+              >
+                {t('TOPIC_6_LABEL')}
+              </motion.li>
             </Grid>
-          </div>
+            <Grid className={classes.secondList} item xs={12} md={6}>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 3.2 }}
+              >
+                {t('TOPIC_7_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 3.4 }}
+              >
+                {t('TOPIC_8_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 3.6 }}
+              >
+                {t('TOPIC_9_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 3.8 }}
+              >
+                {t('TOPIC_10_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 4 }}
+              >
+                {t('TOPIC_11_LABEL')}
+              </motion.li>
+              <motion.li
+                variants={item}
+                transition={{ ease: 'anticipate', duration: 4.2 }}
+              >
+                {t('TOPIC_12_LABEL')}
+              </motion.li>
+            </Grid>
+          </Grid>
         </motion.ul>
       </div>
     </div>
   );
 };
-CallForPaper.getInitialProps = async () => ({
-  namespacesRequired: ['home', 'common'],
-});
 
-export default withTranslation('home')(CallForPaper);
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['callForPaper', 'common'],
+    },
+  };
+};
+
+export default CallForPaper;

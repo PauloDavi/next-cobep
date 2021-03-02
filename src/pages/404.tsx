@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import {
   Container,
@@ -10,7 +9,7 @@ import {
 import Image from 'next/image';
 
 import Head from 'next/head';
-import { withTranslation } from '../../i18n';
+import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -54,4 +53,12 @@ const Page404 = () => {
   );
 };
 
-export default withTranslation('common')(Page404);
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['common'],
+    },
+  };
+};
+
+export default Page404;

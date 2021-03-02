@@ -18,8 +18,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { motion } from 'framer-motion';
 
-import { withTranslation } from '../../i18n';
-import { TFunction } from 'next-i18next';
+import { useTranslation } from '../../i18n';
 import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -45,7 +44,7 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     textLabel: {
-      marginRight: 5,
+      marginLeft: 5,
     },
     flexColumn: {
       display: 'flex',
@@ -126,7 +125,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Footer = ({ t }: { readonly t: TFunction }) => {
+const Footer = () => {
+  const { t } = useTranslation('footer');
+
   const classes = useStyles();
 
   return (
@@ -159,7 +160,7 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
                     align="left"
                     color="inherit"
                   >
-                    {t('title')}
+                    {t('TITLE_LABEL')}
                   </Typography>
                 </div>
               </Hidden>
@@ -168,7 +169,7 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
               className={clsx(classes.heightFull, classes.flexColumn, 'flex')}
             >
               <Typography className={classes.footerTextBold}>
-                Contato:
+                {t('CONTACT_LABEL')}
               </Typography>
               <div className={clsx(classes.flexRow, classes.alignCenter)}>
                 <Typography
@@ -177,15 +178,17 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
                     classes.contactUsTextBold
                   )}
                 >
-                  E-mail:
+                  {t('EMAIL_LABEL')}
                 </Typography>
-                <Link
-                  className={classes.contactUsText}
-                  href="mailto:cobep2021@cear.ufpb.br"
-                  target="_blank"
-                >
-                  cobep2021@cear.ufpb.br
-                </Link>
+                <div className="ml-2">
+                  <Link
+                    className={classes.contactUsText}
+                    href="mailto:cobep2021@cear.ufpb.br"
+                    target="_blank"
+                  >
+                    cobep@cear.ufpb.br
+                  </Link>
+                </div>
               </div>
               <div className={clsx(classes.flexRow, classes)}>
                 <Typography
@@ -194,12 +197,16 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
                     classes.contactUsTextBold
                   )}
                 >
-                  Fone:
+                  {t('FONE_LABEL')}
                 </Typography>
                 <Typography
-                  className={clsx(classes.contactUsText, classes.textLabel)}
+                  className={clsx(
+                    classes.contactUsText,
+                    classes.textLabel,
+                    'ml-5'
+                  )}
                 >
-                  (83) 99999-9999
+                  (83) 3216-7268
                 </Typography>
               </div>
               <div className="flex flex-row justify-between">
@@ -239,10 +246,10 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
           <div className={classes.divFooter}>
             <div className={classes.divFooterText}>
               <Typography className={classes.footerTextBold}>
-                {t('title')}
+                {t('TITLE_LABEL')}
               </Typography>
               <Typography className={classes.footerText}>
-                {t('subtitle')}
+                {t('SUBTITLE_LABEL')}
               </Typography>
             </div>
           </div>
@@ -255,9 +262,9 @@ const Footer = ({ t }: { readonly t: TFunction }) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      namespacesRequired: ['footer'],
+      namespacesRequired: ['footer', 'common'],
     },
   };
 };
 
-export default withTranslation('footer')(Footer);
+export default Footer;

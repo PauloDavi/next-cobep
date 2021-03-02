@@ -1,127 +1,192 @@
 import React from 'react';
 import Image from 'next/image';
-import { Card, Grid, Typography, useTheme } from '@material-ui/core';
-import { useTranslation, withTranslation } from '../../i18n';
+import { Card, Grid, useTheme } from '@material-ui/core';
+import { useTranslation } from '../../i18n';
+import { GetStaticProps } from 'next';
+import Head from 'next/head';
 
 const Sponsors = () => {
   const theme = useTheme();
   const { t } = useTranslation('sponsors');
 
   return (
-    <div className="py-5">
-      <h1 className="text-gray-600 text-5xl sm:text-8xl text-center mb-5 mt-2">
-        Apoiadores
-      </h1>
-      <section>
-        <div className="flex flex-row items-center text-gray-600 ml-4">
-          <Image
-            src="/images/medals/gold.png"
-            alt="Medalha de ouro"
-            height={80}
-            width={60}
-          />
-          <h3 className="ml-4 text-4xl sm:text-5xl">Ouro</h3>
-          <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
-        </div>
-        <div className="mx-10 my-5">
-          <Grid container spacing={2}>
-            <Grid item>
-              <Card
-                elevation={5}
-                className="p-5"
-                style={{ backgroundColor: theme.palette.background.default }}
-              >
-                <Image
-                  src="/images/sponsors/Ohmini.png"
-                  alt="Ohmini"
-                  height={100}
-                  width={200}
-                />
-              </Card>
+    <>
+      <Head>
+        <title>{t('PAGE_TITLE_LABEL')}</title>
+      </Head>
+      <div className="py-5">
+        <h1 className="text-gray-600 text-5xl sm:text-8xl text-center mb-5 mt-2">
+          {t('SPONSORS_LABEL')}
+        </h1>
+        <section>
+          <div className="flex flex-row items-center text-gray-600 ml-4">
+            <Image
+              src="/images/medals/gold.png"
+              alt={t('GOLD_MEDAL_LABEL')}
+              height={80}
+              width={60}
+            />
+            <h3 className="ml-4 text-4xl sm:text-5xl">{t('GOLD_LABEL')}</h3>
+            <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
+          </div>
+          <div className="mx-10 my-5">
+            <Grid container spacing={2}>
+              <Grid item>
+                <a
+                  href="https://www.ohmini.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card
+                    elevation={5}
+                    className="p-5"
+                    style={{
+                      backgroundColor: theme.palette.background.default,
+                    }}
+                  >
+                    <Image
+                      src="/images/sponsors/Ohmini.png"
+                      alt="Ohmini"
+                      height={100}
+                      width={200}
+                    />
+                  </Card>
+                </a>
+              </Grid>
+              <Grid item>
+                <a
+                  href="https://www.semikron.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card
+                    elevation={5}
+                    className="p-5"
+                    style={{
+                      backgroundColor: theme.palette.background.default,
+                    }}
+                  >
+                    <Image
+                      src="/images/sponsors/semikron.png"
+                      alt="Semikron"
+                      height={100}
+                      width={266}
+                    />
+                  </Card>
+                </a>
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-      </section>
-      <section>
-        <div className="flex flex-row items-center text-gray-600 ml-4">
-          <Image
-            src="/images/medals/silver.png"
-            alt="Medalha de prata"
-            height={72}
-            width={54}
-          />
-          <h3 className="ml-4 text-4xl sm:text-5xl">Prata</h3>
-          <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
-        </div>
-        <div className="mx-10 my-5">
-          <Grid container spacing={2}>
-            <Grid item>
-              <Card
-                elevation={5}
-                className="p-5"
-                style={{ backgroundColor: theme.palette.background.default }}
-              >
-                <Image
-                  src="/images/sponsors/OPAL.png"
-                  alt="OPAL"
-                  height={75}
-                  width={404}
-                />
-              </Card>
+          </div>
+        </section>
+        <section>
+          <div className="flex flex-row items-center text-gray-600 ml-4">
+            <Image
+              src="/images/medals/silver.png"
+              alt={t('SILVER_MEDAL_LABEL')}
+              height={72}
+              width={54}
+            />
+            <h3 className="ml-4 text-4xl sm:text-5xl">{t('SILVER_LABEL')}</h3>
+            <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
+          </div>
+          <div className="mx-10 my-5">
+            <Grid container spacing={2}>
+              <Grid item>
+                <a
+                  href="https://www.opal-rt.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card
+                    elevation={5}
+                    className="p-5"
+                    style={{
+                      backgroundColor: theme.palette.background.default,
+                    }}
+                  >
+                    <Image
+                      src="/images/sponsors/OPAL.png"
+                      alt="OPAL"
+                      height={50}
+                      width={270}
+                    />
+                  </Card>
+                </a>
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-      </section>
-      <section>
-        <div className="flex flex-row items-center text-gray-600 ml-4">
-          <Image
-            src="/images/medals/bronze.png"
-            alt="Medalha de bronze"
-            height={64}
-            width={48}
-          />
-          <h3 className="ml-4 text-4xl sm:text-5xl">Bronze</h3>
-          <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
-        </div>
-        <div className="mx-10 my-5">
-          <Grid container spacing={2}>
-            <Grid item>
-              <Card
-                elevation={5}
-                className="p-5"
-                style={{ backgroundColor: theme.palette.background.default }}
-              >
-                <Image
-                  src="/images/sponsors/RTDS.png"
-                  alt="RTDS"
-                  height={50}
-                  width={138}
-                />
-              </Card>
+          </div>
+        </section>
+        <section>
+          <div className="flex flex-row items-center text-gray-600 ml-4">
+            <Image
+              src="/images/medals/bronze.png"
+              alt={t('BRONZE_MEDAL_LABEL')}
+              height={64}
+              width={48}
+            />
+            <h3 className="ml-4 text-4xl sm:text-5xl">{t('BRONZE_LABEL')}</h3>
+            <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
+          </div>
+          <div className="mx-10 my-5">
+            <Grid container spacing={2}>
+              <Grid item>
+                <a
+                  href="https://www.rtds.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card
+                    elevation={5}
+                    className="p-5"
+                    style={{
+                      backgroundColor: theme.palette.background.default,
+                    }}
+                  >
+                    <Image
+                      src="/images/sponsors/RTDS.png"
+                      alt="RTDS"
+                      height={50}
+                      width={138}
+                    />
+                  </Card>
+                </a>
+              </Grid>
+              <Grid item>
+                <a
+                  href="https://www.energiasolarphb.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card
+                    elevation={5}
+                    className="p-5"
+                    style={{
+                      backgroundColor: theme.palette.background.default,
+                    }}
+                  >
+                    <Image
+                      src="/images/sponsors/PHB.png"
+                      alt="PHB"
+                      height={50}
+                      width={82}
+                    />
+                  </Card>
+                </a>
+              </Grid>
             </Grid>
-            <Grid item>
-              <Card
-                elevation={5}
-                className="p-5"
-                style={{ backgroundColor: theme.palette.background.default }}
-              >
-                <Image
-                  src="/images/sponsors/PHB.png"
-                  alt="PHB"
-                  height={50}
-                  width={82}
-                />
-              </Card>
-            </Grid>
-          </Grid>
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 
-Sponsors.getInitialProps = async () => ({
-  namespacesRequired: ['sponsors'],
-});
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      namespacesRequired: ['sponsors', 'common'],
+    },
+  };
+};
 
-export default withTranslation('sponsors')(Sponsors);
+export default Sponsors;

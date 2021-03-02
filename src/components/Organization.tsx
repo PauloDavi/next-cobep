@@ -12,8 +12,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import { withTranslation } from '../../i18n';
-import { TFunction } from 'next-i18next';
+import { useTranslation } from '../../i18n';
 import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -43,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
     },
-    organizationTextBold: {
+    ORGANIZATION_LABELTextBold: {
       fontWeight: 'bold',
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
       color: '#ffffff',
     },
-    organizationText: {
+    ORGANIZATION_LABELText: {
       marginLeft: 10,
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -84,7 +83,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Organization = ({ t }: { readonly t: TFunction }) => {
+const Organization = () => {
+  const { t } = useTranslation('footerImages');
+
   const classes = useStyles();
 
   return (
@@ -95,7 +96,7 @@ const Organization = ({ t }: { readonly t: TFunction }) => {
       >
         <div className={classes.divSecondaryText}>
           <Typography className={classes.secondaryText} variant="h4">
-            {t('organization')}
+            {t('ORGANIZATION_LABEL')}
           </Typography>
         </div>
       </motion.div>
@@ -180,9 +181,9 @@ const Organization = ({ t }: { readonly t: TFunction }) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      namespacesRequired: ['organization'],
+      namespacesRequired: ['footerImages', 'common'],
     },
   };
 };
 
-export default withTranslation('organization')(Organization);
+export default Organization;

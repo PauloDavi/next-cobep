@@ -1,5 +1,3 @@
-/* eslint-disable react/no-children-prop */
-/* eslint-disable multiline-ternary */
 import React, { useState } from 'react';
 import {
   createStyles,
@@ -34,43 +32,10 @@ import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 
 import { useRouter } from 'next/router';
-import { TFunction } from 'next-i18next';
-import { withTranslation } from '../../i18n';
+import { useTranslation } from '../../i18n';
 
+import pages from './pages';
 import { GetStaticProps } from 'next';
-
-const pages = [
-  {
-    menuTitleTranslate: 'inicio',
-    pageURL: '/',
-  },
-  {
-    menuTitleTranslate: 'O Congresso',
-    pageURL: '/call-for-paper',
-  },
-  {
-    menuTitleTranslate: 'Autores/Revisores',
-    index: 0,
-    children: [
-      {
-        menuTitleTranslate: 'Dates',
-        pageURL: '/dates',
-      },
-      {
-        menuTitleTranslate: 'Modelos',
-        pageURL: '/models',
-      },
-    ],
-  },
-  {
-    menuTitleTranslate: 'Sponsors',
-    pageURL: '/sponsors',
-  },
-  {
-    menuTitleTranslate: 'FAQ',
-    pageURL: '/',
-  },
-];
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -137,7 +102,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Header = ({ t }: { readonly t: TFunction }) => {
+const Header = () => {
+  const { t } = useTranslation('header');
+
   const router = useRouter();
   const classes = useStyles();
   const theme = useTheme();
@@ -146,10 +113,6 @@ const Header = ({ t }: { readonly t: TFunction }) => {
   const trigger = useScrollTrigger();
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const handleMenusClick = (pageURL: string) => {
-    router.push(pageURL);
-  };
 
   const handleButtonClick = (pageURL: string) => {
     router.push(pageURL);
@@ -248,15 +211,14 @@ const Header = ({ t }: { readonly t: TFunction }) => {
           ) : (
             <div className={classes.headerOptions}>
               {pages.map((page) => {
-                const { menuTitleTranslate, pageURL, children, index } = page;
+                const { menuTitleTranslate, pageURL, children } = page;
 
                 if (children) {
                   return (
                     <div key={menuTitleTranslate}>
-                      <MyMenu
-                        children={children}
-                        menuTitleTranslate={menuTitleTranslate}
-                      />
+                      <MyMenu menuTitleTranslate={menuTitleTranslate}>
+                        {children}
+                      </MyMenu>
                     </div>
                   );
                 } else {
@@ -283,9 +245,9 @@ const Header = ({ t }: { readonly t: TFunction }) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      namespacesRequired: ['header'],
+      namespacesRequired: ['header', 'common'],
     },
   };
 };
 
-export default withTranslation('header')(Header);
+export default Header;

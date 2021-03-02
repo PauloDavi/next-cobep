@@ -1,10 +1,10 @@
 import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import { useRouter } from 'next/router';
 import { Button, MenuItem, Typography, Menu } from '@material-ui/core';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import ExpandLessOutlinedIcon from '@material-ui/icons/ExpandLessOutlined';
 import Link from 'next/link';
+import { useTranslation } from '../../i18n';
 
 interface MenuProps {
   children: {
@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const MyMenu = ({ children, menuTitleTranslate }: MenuProps) => {
-  const router = useRouter();
+  const { t } = useTranslation('header');
+
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
 
@@ -60,7 +61,7 @@ const MyMenu = ({ children, menuTitleTranslate }: MenuProps) => {
         onClick={handleClick}
         className="flex items-center"
       >
-        <Typography>{menuTitleTranslate}</Typography>
+        <Typography>{t(menuTitleTranslate)}</Typography>
         {open ? <ExpandLessOutlinedIcon /> : <ExpandMoreOutlinedIcon />}
       </Button>
       <Menu
@@ -84,7 +85,9 @@ const MyMenu = ({ children, menuTitleTranslate }: MenuProps) => {
             key={child.menuTitleTranslate}
             onClick={(e) => setAnchorEl(open ? null : e.currentTarget)}
           >
-            <Link href={child.pageURL || '/'}>{child.menuTitleTranslate}</Link>
+            <Link href={child.pageURL || '/'}>
+              {t(child.menuTitleTranslate)}
+            </Link>
           </MenuItem>
         ))}
       </Menu>

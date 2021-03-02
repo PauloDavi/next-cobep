@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: 14,
       color: '#ffffff',
     },
-    divOrganization: {
+    divTechnicalSupport: {
       display: 'flex',
       boxShadow: theme.shadows[19],
       flexDirection: 'column',
@@ -36,13 +36,13 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: 5,
       backgroundImage: `linear-gradient(to right,  ${theme.palette.primary.main}, ${theme.palette.primary.dark}, ${theme.palette.secondary.main})`,
     },
-    divOrganizationText: {
+    divTechnicalSupportText: {
       display: 'flex',
       marginBottom: 5,
       justifyContent: 'center',
       alignItems: 'center',
     },
-    technicalSupportTextBold: {
+    organizationTextBold: {
       fontWeight: 'bold',
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
       color: '#ffffff',
     },
-    technicalSupportText: {
+    organizationText: {
       marginLeft: 10,
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -68,14 +68,14 @@ const useStyles = makeStyles((theme: Theme) =>
     divSecondaryText: {
       height: 'auto',
       padding: '5px 15px',
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: theme.palette.secondary.main,
       color: '#ffffff',
       marginBottom: 20,
       display: 'flex',
       alignItems: 'center',
-      maxWidth: 220,
-      borderRadius: '0 8px 8px 0',
-      marginRight: 'auto',
+      maxWidth: 200,
+      borderRadius: '8px 0 0 8px',
+      marginLeft: 'auto',
     },
     secondaryText: {
       fontSize: 24,
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const TechnicalSupport = () => {
+const Partners = () => {
   const { t } = useTranslation('footerImages');
 
   const classes = useStyles();
@@ -91,16 +91,21 @@ const TechnicalSupport = () => {
   return (
     <div>
       <motion.div
-        animate={{ x: [-200, 0], opacity: [0, 1] }}
+        animate={{ x: [200, 0], opacity: [0, 1] }}
         transition={{ ease: 'easeOut', duration: 1.5 }}
       >
         <div className={classes.divSecondaryText}>
           <Typography className={classes.secondaryText} variant="h4">
-            {t('TECHNICAL_SUPPORT_LABEL')}
+            {t('PARTNERS_LABEL')}
           </Typography>
         </div>
       </motion.div>
-      <Grid className={classes.divLogos} container spacing={2}>
+      <Grid
+        className={classes.divLogos}
+        direction="row-reverse"
+        container
+        spacing={2}
+      >
         <Grid
           item
           xs={12}
@@ -108,13 +113,67 @@ const TechnicalSupport = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 1.5 }}
+            animate={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 3.5 }}
           >
             <Image
-              src="/images/logo_IEEE.png"
-              alt="Logo IEEE"
-              width={95}
+              src="/images/IFRN.png"
+              alt="Logo IFRN"
+              width={115}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 3.5 }}
+          >
+            <Image
+              src="/images/ifpb.png"
+              alt="Logo IFPB"
+              width={83}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 3.5 }}
+          >
+            <Image
+              src="/images/ufrn.png"
+              alt="Logo UFRN"
+              width={313}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 3.5 }}
+          >
+            <Image
+              src="/images/ABMR.png"
+              alt="Logo ABMR"
+              width={360}
               height={100}
             />
           </motion.div>
@@ -132,4 +191,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default TechnicalSupport;
+export default Partners;

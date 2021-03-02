@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "static": "next build && next export -o build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
