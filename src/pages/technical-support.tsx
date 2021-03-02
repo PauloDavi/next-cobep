@@ -5,6 +5,7 @@ import { useTranslation } from '../../i18n';
 import { Grid, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import { GetStaticProps } from 'next';
+import { motion } from 'framer-motion';
 
 const supports = [
   {
@@ -103,25 +104,34 @@ const TechnicalSupport = () => {
 
       <div className="p-8">
         <Grid container spacing={2}>
-          {supports.map((support) => (
+          {supports.map((support, index) => (
             <Grid xs={12} md={6} lg={4} item key={support.category}>
-              <div className="text-lg font-bold text-blue-500">
-                {t(support.category)}
-              </div>
-              {support.people.map((item, index) => (
-                <div className={clsx(index !== 0 && 'mt-4')} key={item.name}>
-                  <Typography className="font-bold">{item.name}</Typography>
-                  {item.email !== '' && (
-                    <a
-                      href={`mailto:${item.email}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {item.email}
-                    </a>
-                  )}
+              <motion.div
+                animate={{ y: [100, 0], opacity: [0, 1] }}
+                transition={{
+                  ease: 'easeOut',
+                  duration: 1,
+                  delay: index * 0.2,
+                }}
+              >
+                <div className="text-lg font-bold text-blue-500">
+                  {t(support.category)}
                 </div>
-              ))}
+                {support.people.map((item, index) => (
+                  <div className={clsx(index !== 0 && 'mt-4')} key={item.name}>
+                    <Typography className="font-bold">{item.name}</Typography>
+                    {item.email !== '' && (
+                      <a
+                        href={`mailto:${item.email}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.email}
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </motion.div>
             </Grid>
           ))}
         </Grid>

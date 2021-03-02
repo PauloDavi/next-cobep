@@ -16,7 +16,6 @@ interface MenuProps {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     popover: {
-      marginTop: 48,
       '&:before': {
         content: '',
         position: 'absolute',
@@ -81,14 +80,13 @@ const MyMenu = ({ children, menuTitleTranslate }: MenuProps) => {
         onClose={handleRequestClose}
       >
         {children.map((child) => (
-          <MenuItem
-            key={child.menuTitleTranslate}
-            onClick={(e) => setAnchorEl(open ? null : e.currentTarget)}
-          >
-            <Link href={child.pageURL || '/'}>
+          <Link href={child.pageURL || '/'} key={child.menuTitleTranslate}>
+            <MenuItem
+              onClick={(e) => setAnchorEl(open ? null : e.currentTarget)}
+            >
               {t(child.menuTitleTranslate)}
-            </Link>
-          </MenuItem>
+            </MenuItem>
+          </Link>
         ))}
       </Menu>
     </div>

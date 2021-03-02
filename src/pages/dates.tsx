@@ -14,12 +14,14 @@ import {
 
 import { Paper, Typography } from '@material-ui/core';
 
-import FastfoodIcon from '@material-ui/icons/Fastfood';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import HotelIcon from '@material-ui/icons/Hotel';
-import RepeatIcon from '@material-ui/icons/Repeat';
 import { GetStaticProps } from 'next';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
+
+import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
+import InsertDriveFileOutlinedIcon from '@material-ui/icons/InsertDriveFileOutlined';
+import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
+import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 
 const Dates = () => {
   const { t } = useTranslation('dates');
@@ -30,88 +32,135 @@ const Dates = () => {
         <title>{t('PAGE_TITLE_LABEL')}</title>
       </Head>
       <div className="py-10">
+        <h1 className="text-center text-5xl font-bold mb-5">
+          {t('PAGE_TITLE_LABEL')}
+        </h1>
         <Timeline align="alternate">
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
-              <Typography variant="body2" color="textSecondary">
-                9:30 am
-              </Typography>
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  {t('DATE_RESUME_DEADLINE_LABEL')}
+                </Typography>
+              </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary">
-                <FastfoodIcon className="text-white" />
+                <DescriptionOutlinedIcon className="text-white" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Paper elevation={3} className="px-6 py-3">
-                <Typography variant="h6" component="h1">
-                  Eat
-                </Typography>
-                <Typography>Because you need strength</Typography>
-              </Paper>
+              <motion.div
+                initial={{ x: 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('RESUME_DEADLINE_LABEL')}
+                  </Typography>
+                </Paper>
+              </motion.div>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
-              <Typography variant="body2" color="textSecondary">
-                10:00 am
-              </Typography>
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  {t('DATE_TUTORIALS_DEADLINE_LABEL')}
+                </Typography>
+              </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
-                <LaptopMacIcon />
+                <InsertDriveFileOutlinedIcon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Paper elevation={3} className="px-6 py-3">
-                <Typography variant="h6" component="h1">
-                  Code
-                </Typography>
-                <Typography>Because it&apos;s awesome!</Typography>
-              </Paper>
+              <motion.div
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('TUTORIALS_DEADLINE_LABEL')}
+                  </Typography>
+                </Paper>
+              </motion.div>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
-              <Typography variant="body2" color="textSecondary">
-                9:30 am
-              </Typography>
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  {t('DATE_ACCEPTED_NOTIFICATION_DEADLINE_LABEL')}
+                </Typography>
+              </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary">
-                <HotelIcon className="text-white" />
+                <NotificationsNoneOutlinedIcon className="text-white" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Paper elevation={3} className="px-6 py-3">
-                <Typography variant="h6" component="h1">
-                  Sleep
-                </Typography>
-                <Typography>Because you need rest</Typography>
-              </Paper>
+              <motion.div
+                initial={{ x: 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('ACCEPTED_NOTIFICATION_DEADLINE_LABEL')}
+                  </Typography>
+                </Paper>
+              </motion.div>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
-              <Typography variant="body2" color="textSecondary">
-                9:30 am
-              </Typography>
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  {t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}
+                </Typography>
+              </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
-                <RepeatIcon />
+                <SendOutlinedIcon />
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent>
-              <Paper elevation={3} className="px-6 py-3">
-                <Typography variant="h6" component="h1">
-                  Repeat
-                </Typography>
-                <Typography>Because this is the life you love!</Typography>
-              </Paper>
+              <motion.div
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('FINAL_SUBMISSION_DEADLINE_LABEL')}
+                  </Typography>
+                </Paper>
+              </motion.div>
             </TimelineContent>
           </TimelineItem>
         </Timeline>

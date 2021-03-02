@@ -77,13 +77,19 @@ const Home = () => {
             </Grid>
             <Grid item xs={12}>
               <div className="flex justify-center">
-                <Button
-                  className={classes.shadow}
-                  variant="contained"
-                  color="secondary"
+                <a
+                  href="https://cobep2021.softaliza.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {t('SITEM_SUBMIT_BUTTON_LABEL')}
-                </Button>
+                  <Button
+                    className={classes.shadow}
+                    variant="contained"
+                    color="secondary"
+                  >
+                    {t('SITEM_SUBMIT_BUTTON_LABEL')}
+                  </Button>
+                </a>
               </div>
             </Grid>
           </Grid>

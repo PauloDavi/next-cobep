@@ -223,13 +223,15 @@ const Header = () => {
                   );
                 } else {
                   return (
-                    <Button
-                      key={menuTitleTranslate}
-                      variant="text"
-                      color="inherit"
-                    >
-                      <Link href={pageURL || '/'}>{t(menuTitleTranslate)}</Link>
-                    </Button>
+                    <Link href={pageURL || '/'}>
+                      <Button
+                        key={menuTitleTranslate}
+                        variant="text"
+                        color="inherit"
+                      >
+                        {t(menuTitleTranslate)}
+                      </Button>
+                    </Link>
                   );
                 }
               })}
