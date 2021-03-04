@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: 20,
       display: 'flex',
       alignItems: 'center',
-      maxWidth: 220,
+      maxWidth: 120,
       borderRadius: '0 8px 8px 0',
       marginRight: 'auto',
     },
@@ -101,6 +101,30 @@ const TechnicalSupport = () => {
         </div>
       </motion.div>
       <Grid className={classes.divLogos} container spacing={2}>
+        <Grid
+          item
+          xs={12}
+          sm={4}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <motion.div
+            className="px-10"
+            animate={{ x: [-200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 1.5 }}
+          >
+            <Image
+              src="/images/sobraep.png"
+              alt="Logo SOBRAEP"
+              layout="intrinsic"
+              width={366}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
         <Grid
           item
           xs={12}

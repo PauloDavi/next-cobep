@@ -131,131 +131,119 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <>
+    <motion.div
+      animate={{ y: [200, 0], opacity: [0, 1] }}
+      transition={{ ease: 'easeOut', duration: 1.5 }}
+    >
       <footer className={classes.mainDiv}>
-        <motion.div
-          animate={{ y: [200, 0], opacity: [0, 1] }}
-          transition={{ ease: 'easeOut', duration: 1.5 }}
-        >
-          <div className={clsx(classes.alignCenterBetween, classes.flexRow)}>
-            <div className={classes.flexRow}>
-              <Image
-                priority
-                src="/images/logo-cobep-2020.png"
-                alt="COBEP 2021"
-                width={150}
-                height={150}
-              />
-              <Hidden xsDown>
-                <div
-                  className={clsx(
-                    classes.flexColumn,
-                    classes.alignCenter,
-                    classes.marginLeft10
-                  )}
+        <div className={clsx(classes.alignCenterBetween, classes.flexRow)}>
+          <div className={classes.flexRow}>
+            <Image
+              priority
+              src="/images/logo-cobep-2020.png"
+              alt="COBEP 2021"
+              width={150}
+              height={150}
+            />
+            <Hidden xsDown>
+              <div
+                className={clsx(
+                  classes.flexColumn,
+                  classes.alignCenter,
+                  classes.marginLeft10
+                )}
+              >
+                <Typography
+                  className={classes.mainTitle}
+                  variant="h2"
+                  align="left"
+                  color="inherit"
                 >
-                  <Typography
-                    className={classes.mainTitle}
-                    variant="h2"
-                    align="left"
-                    color="inherit"
-                  >
-                    {t('TITLE_LABEL')}
-                  </Typography>
-                </div>
-              </Hidden>
-            </div>
-            <div
-              className={clsx(classes.heightFull, classes.flexColumn, 'flex')}
-            >
-              <Typography className={classes.footerTextBold}>
-                {t('CONTACT_LABEL')}
+                  {t('TITLE_LABEL')}
+                </Typography>
+              </div>
+            </Hidden>
+          </div>
+          <div className={clsx(classes.heightFull, classes.flexColumn, 'flex')}>
+            <Typography className={classes.footerTextBold}>
+              {t('CONTACT_LABEL')}
+            </Typography>
+            <div className={clsx(classes.flexRow, classes.alignCenter)}>
+              <Typography
+                className={clsx(
+                  classes.contactUsText,
+                  classes.contactUsTextBold
+                )}
+              >
+                {t('EMAIL_LABEL')}
               </Typography>
-              <div className={clsx(classes.flexRow, classes.alignCenter)}>
-                <Typography
-                  className={clsx(
-                    classes.contactUsText,
-                    classes.contactUsTextBold
-                  )}
+              <div className="ml-2">
+                <Link
+                  className={classes.contactUsText}
+                  href="mailto:cobep2021@cear.ufpb.br"
+                  target="_blank"
                 >
-                  {t('EMAIL_LABEL')}
-                </Typography>
-                <div className="ml-2">
-                  <Link
-                    className={classes.contactUsText}
-                    href="mailto:cobep2021@cear.ufpb.br"
-                    target="_blank"
-                  >
-                    cobep@cear.ufpb.br
-                  </Link>
-                </div>
+                  cobep@cear.ufpb.br
+                </Link>
               </div>
-              <div className={clsx(classes.flexRow, classes)}>
-                <Typography
-                  className={clsx(
-                    classes.contactUsText,
-                    classes.contactUsTextBold
-                  )}
+            </div>
+            <div className={clsx(classes.flexRow, classes)}>
+              <Typography
+                className={clsx(
+                  classes.contactUsText,
+                  classes.contactUsTextBold
+                )}
+              >
+                {t('FONE_LABEL')}
+              </Typography>
+              <Typography
+                className={clsx(
+                  classes.contactUsText,
+                  classes.textLabel,
+                  'ml-5'
+                )}
+              >
+                (83) 3216-7268
+              </Typography>
+            </div>
+            <div className="flex flex-row justify-between">
+              <IconButton>
+                <Link
+                  href="https://www.instagram.com/cobep2021/"
+                  target="_blank"
                 >
-                  {t('FONE_LABEL')}
-                </Typography>
-                <Typography
-                  className={clsx(
-                    classes.contactUsText,
-                    classes.textLabel,
-                    'ml-5'
-                  )}
+                  <InstagramIcon className={classes.icons} />
+                </Link>
+              </IconButton>
+              <IconButton>
+                <Link href="https://www.facebook.com/cobep2021" target="_blank">
+                  <FacebookIcon className={classes.icons} />
+                </Link>
+              </IconButton>
+              <IconButton>
+                <Link
+                  href="https://www.linkedin.com/company/sobraep-associação-brasileira-de-eletrônica-de-potência/"
+                  target="_blank"
                 >
-                  (83) 3216-7268
-                </Typography>
-              </div>
-              <div className="flex flex-row justify-between">
-                <IconButton>
-                  <Link
-                    href="https://www.instagram.com/cobep2021/"
-                    target="_blank"
-                  >
-                    <InstagramIcon className={classes.icons} />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link
-                    href="https://www.facebook.com/cobep2021"
-                    target="_blank"
-                  >
-                    <FacebookIcon className={classes.icons} />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link
-                    href="https://www.linkedin.com/company/sobraep-associação-brasileira-de-eletrônica-de-potência/"
-                    target="_blank"
-                  >
-                    <LinkedInIcon className={classes.icons} />
-                  </Link>
-                </IconButton>
-              </div>
+                  <LinkedInIcon className={classes.icons} />
+                </Link>
+              </IconButton>
             </div>
           </div>
-        </motion.div>
+        </div>
         <div className={classes.separator}></div>
-        <motion.div
-          animate={{ y: [200, 0], opacity: [0, 1] }}
-          transition={{ ease: 'easeOut', duration: 1.5 }}
-        >
-          <div className={classes.divFooter}>
-            <div className={classes.divFooterText}>
-              <Typography className={classes.footerTextBold}>
-                {t('TITLE_LABEL')}
-              </Typography>
-              <Typography className={classes.footerText}>
-                {t('SUBTITLE_LABEL')}
-              </Typography>
-            </div>
+        <div className={classes.divFooter}>
+          <div className={classes.divFooterText}>
+            <Typography className={classes.footerTextBold}>
+              {t('TITLE_LABEL')}
+            </Typography>
+            <Typography className={classes.footerText}>
+              {t('SUBTITLE_LABEL')}
+            </Typography>
           </div>
-        </motion.div>
+        </div>
       </footer>
-    </>
+    </motion.div>
   );
 };
 

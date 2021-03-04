@@ -60,7 +60,7 @@ const Home = () => {
           <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
           <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
         </AutoplaySlider>
-        <div className="px-8 pb-16 pt-5 text-white font-bold text-md leading-none">
+        <div className="px-8 pb-16 pt-5 text-white text-md leading-none">
           <Grid container spacing={4}>
             <Grid item xs={12}>
               <Typography variant="h3">{t('TITLE_LABEL')}</Typography>
@@ -98,13 +98,17 @@ const Home = () => {
 
       <div className="mt-10 w-full px-8 py-5 text-white font-bold text-md leading-none">
         <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <div className="flex justify-center">
-              <Card
-                className={clsx(
-                  'text-center px-5 pb-8 pt-5 h-full max-w-sm',
-                  classes.shadow
-                )}
+          <Grid className="flex justify-center items-center" item xs={12}>
+            <Card
+              className={clsx(
+                'text-center px-5 pb-8 pt-5 h-full max-w-sm',
+                classes.shadow
+              )}
+            >
+              <a
+                href="/documents/call_for_paper.pdf"
+                download="callForPaper.pdf"
+                className="flex justify-center"
               >
                 <div className="text-xl text-center mb-5">
                   <Typography variant="h5" color="secondary">
@@ -112,19 +116,16 @@ const Home = () => {
                   </Typography>
                   <div className="mt-4">
                     <Image
-                      src="https://www.ieee-ecce.org/2021/wp-content/uploads/sites/7/2020/09/Call-for-Papers-e1600095050722.png"
+                      className="border-gray-300 border-2 rounded"
+                      src="/images/test.jpeg"
                       alt={t('CALL_FOR_PAPERS_AND_TUTORIALS_LABEL')}
-                      width={120}
-                      height={159}
+                      width={256}
+                      height={200}
                     />
                   </div>
                 </div>
-                <p>{t('CALL_FOR_PAPERS_AND_TUTORIALS_PRIMARY_TEXT_LABEL')}</p>
-                <p className="mt-5">
-                  {t('CALL_FOR_PAPERS_AND_TUTORIALS_SECONDARY_TEXT_LABEL')}
-                </p>
-              </Card>
-            </div>
+              </a>
+            </Card>
           </Grid>
         </Grid>
       </div>

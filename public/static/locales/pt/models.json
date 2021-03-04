@@ -3,7 +3,7 @@
   "MODELS_LABEL": "Modelos",
   "PAPERS_LABEL": "Papers",
   "TUTORIALS_LABEL": "Tutorials",
-  "PAPERS_PRIMARY_TEXT_LABEL": "Descrição 1...",
+  "PAPERS_PRIMARY_TEXT_LABEL": "Regras de elaboração do resumo\n\nOs autores devem enviar o resumo com coluna simples, espaçamento simples e no máximo quatro (4) páginas (as referências não contam nas 4 páginas), resumindo o artigo proposto. O resumo deve incluir as principais equações, figuras, tabelas e referências conforme apropriado, mas sem nomes de autores ou afiliações. Os resumos que não estiverem em conformidade com esses requisitos serão rejeitados sem revisão. Os resumos devem indicar claramente os objetivos do trabalho, sua importância no avanço do estado da arte e os métodos e resultados específicos em detalhes suficientes. Todos os resumos passarão por um processo duplo-cego de revisão por pares para garantir uma revisão confidencial e justa.",
   "PAPERS_SECONDARY_TEXT_LABEL": "Complemento 1...",
   "TUTORIALS_PRIMARY_TEXT_LABEL": "Descrição 2...",
   "TUTORIALS_SECONDARY_TEXT_LABEL": "Complemento 2..."

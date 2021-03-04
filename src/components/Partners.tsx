@@ -89,7 +89,7 @@ const Partners = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div style={{ maxWidth: '100vw' }}>
       <motion.div
         animate={{ x: [200, 0], opacity: [0, 1] }}
         transition={{ ease: 'easeOut', duration: 1.5 }}
@@ -145,15 +145,21 @@ const Partners = () => {
         <Grid
           item
           xs={12}
-          sm={2}
-          style={{ display: 'flex', justifyContent: 'center' }}
+          sm={4}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
           <motion.div
+            className="px-10"
             animate={{ x: [200, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 3.5 }}
           >
             <Image
               src="/images/ufrn.png"
+              layout="intrinsic"
               alt="Logo UFRN"
               width={313}
               height={100}
@@ -163,16 +169,22 @@ const Partners = () => {
         <Grid
           item
           xs={12}
-          sm={2}
-          style={{ display: 'flex', justifyContent: 'center' }}
+          sm={4}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
           <motion.div
+            className="px-10"
             animate={{ x: [200, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 3.5 }}
           >
             <Image
               src="/images/ABMR.png"
               alt="Logo ABMR"
+              layout="intrinsic"
               width={360}
               height={100}
             />
