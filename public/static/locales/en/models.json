@@ -6,5 +6,19 @@
   "PAPERS_PRIMARY_TEXT_LABEL": "Description 1 ...",
   "PAPERS_SECONDARY_TEXT_LABEL": "Complement 1 ...",
   "TUTORIALS_PRIMARY_TEXT_LABEL": "Description 2 ...",
-  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complement 2 ..."
+  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complement 2 ...",
+  "TITLE_1_LABEL": "Summary writing instructions",
+  "TEXT_MODELS_LABEL": "Models",
+  "COMING_SON_LABEL": "Coming soon ...",
+  "TEXT_MODEL_LABEL": "model",
+  "TEXT_BODY_LI_1_LABEL": "The abstract does not include authors' names or affiliations",
+  "TEXT_BODY_LI_2_LABEL": "The abstract has a maximum of four (4) pages",
+  "TEXT_BODY_LI_3_LABEL": "The summary with simple column",
+  "TEXT_BODY_LI_4_LABEL": "The summary with single line spacing",
+  "TEXT_BODY_LI_5_LABEL": "The abstract uses fonts of at least 11pt (preferably 12pt)",
+  "TEXT_BODY_LI_6_LABEL": "The abstract is sent through the Abstract Submission Portal. The abstract submission deadline can be consulted on the website.",
+  "TEXT_BODY_4_LABEL": "Review of requirements - make sure that:",
+  "TEXT_BODY_3_LABEL": "See the conference website for a detailed list of technical topics and the method for submitting a summary.",
+  "TEXT_BODY_2_LABEL": "Authors who wish to publish their articles in the IEEE Xplore Digital Library, must submit the articles in the final extended version. (Template to be made available)",
+  "TEXT_BODY_1_LABEL": "Authors should send the abstract with a single column, single spacing and a maximum of four (4) pages (references do not count in the 4 pages), summarizing the proposed article. The abstract must include the main equations, figures, tables and references as appropriate, but without names of authors or affiliations. Abstracts that do not comply with these requirements will be rejected without review. Abstracts should clearly indicate the objectives of the work, its importance in advancing the state of the art and methods and specific results in sufficient detail. All abstracts will undergo a double-blind peer review process to ensure a confidential and fair review."
 }

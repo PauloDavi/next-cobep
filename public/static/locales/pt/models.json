@@ -6,5 +6,19 @@
   "PAPERS_PRIMARY_TEXT_LABEL": "Regras de elaboração do resumo\n\nOs autores devem enviar o resumo com coluna simples, espaçamento simples e no máximo quatro (4) páginas (as referências não contam nas 4 páginas), resumindo o artigo proposto. O resumo deve incluir as principais equações, figuras, tabelas e referências conforme apropriado, mas sem nomes de autores ou afiliações. Os resumos que não estiverem em conformidade com esses requisitos serão rejeitados sem revisão. Os resumos devem indicar claramente os objetivos do trabalho, sua importância no avanço do estado da arte e os métodos e resultados específicos em detalhes suficientes. Todos os resumos passarão por um processo duplo-cego de revisão por pares para garantir uma revisão confidencial e justa.",
   "PAPERS_SECONDARY_TEXT_LABEL": "Complemento 1...",
   "TUTORIALS_PRIMARY_TEXT_LABEL": "Descrição 2...",
-  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complemento 2..."
+  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complemento 2...",
+  "TITLE_1_LABEL": "Instruções de elaboração do resumo",
+  "TEXT_MODELS_LABEL": "Modelos",
+  "COMING_SON_LABEL": "Em breve...",
+  "TEXT_MODEL_LABEL": "modelo",
+  "TEXT_BODY_LI_1_LABEL": "O resumo não inclui nomes ou afiliações dos autores",
+  "TEXT_BODY_LI_2_LABEL": "O resumo tem no máximo quatro (4) páginas",
+  "TEXT_BODY_LI_3_LABEL": "O resumo com coluna simples",
+  "TEXT_BODY_LI_4_LABEL": "O resumo com espaçamento de linha simples",
+  "TEXT_BODY_LI_5_LABEL": "O resumo usa fontes de pelo menos 11pt (de preferência 12pt)",
+  "TEXT_BODY_LI_6_LABEL": "O resumo é enviado por meio do Portal de envio de resumos. O prazo de envio de resumos pode ser consultado no site.",
+  "TEXT_BODY_4_LABEL": "Recapitulação dos requisitos - certifique-se de que:",
+  "TEXT_BODY_3_LABEL": "Consulte o site da conferência para obter uma lista detalhada de tópicos técnicos e o método de envio de resumo.",
+  "TEXT_BODY_2_LABEL": "Os autores que desejarem publicar seus artigos na Biblioteca Digital IEEE Xplore, devem enviar os artigos da versão final estendida. (Modelo a ser disponibilizado)",
+  "TEXT_BODY_1_LABEL": " Os autores devem enviar o resumo com coluna simples, espaçamento simples e no máximo quatro (4) páginas (as referências não contam nas 4 páginas), resumindo o artigo proposto. O resumo deve incluir as principais equações, figuras, tabelas e referências conforme apropriado, mas sem nomes de autores ou afiliações. Os resumos que não estiverem em conformidade com esses requisitos serão rejeitados sem revisão. Os resumos devem indicar claramente os objetivos do trabalho, sua importância no avanço do estado da arte e os métodos e resultados específicos em detalhes suficientes. Todos os resumos passarão por um processo duplo-cego de revisão por pares para garantir uma revisão confidencial e justa."
 }

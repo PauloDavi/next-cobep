@@ -26,57 +26,20 @@ const Models = () => {
                       {t('PAPERS_LABEL')}
                     </Typography>
                   </div>
-                  <p className="text-lg font-semibold">
-                    Instruções de elaboração do resumo
-                  </p>
-                  <p className="mt-5">
-                    Os autores devem enviar o resumo com coluna simples,
-                    espaçamento simples e no máximo quatro (4) páginas (as
-                    referências não contam nas 4 páginas), resumindo o artigo
-                    proposto. O resumo deve incluir as principais equações,
-                    figuras, tabelas e referências conforme apropriado, mas sem
-                    nomes de autores ou afiliações. Os resumos que não estiverem
-                    em conformidade com esses requisitos serão rejeitados sem
-                    revisão. Os resumos devem indicar claramente os objetivos do
-                    trabalho, sua importância no avanço do estado da arte e os
-                    métodos e resultados específicos em detalhes suficientes.
-                    Todos os resumos passarão por um processo duplo-cego de
-                    revisão por pares para garantir uma revisão confidencial e
-                    justa.
-                  </p>
-                  <p className="mt-5">
-                    Os autores que desejarem publicar seus artigos na Biblioteca
-                    Digital IEEE Xplore, devem enviar os artigos da versão final
-                    estendida. (Modelo a ser disponibilizado)
-                  </p>
-                  <p className="mt-5">
-                    Consulte o site da conferência para obter uma lista
-                    detalhada de tópicos técnicos e o método de envio de resumo.
-                  </p>
-                  <p className="mt-8 font-semibold">
-                    Recapitulação dos requisitos - certifique-se de que:
-                  </p>
+                  <p className="text-lg font-semibold">{t('TITLE_1_LABEL')}</p>
+                  <p className="mt-5">{t('TEXT_BODY_1_LABEL')}</p>
+                  <p className="mt-5">{t('TEXT_BODY_2_LABEL')}</p>
+                  <p className="mt-5">{t('TEXT_BODY_3_LABEL')}</p>
+                  <p className="mt-8 font-semibold">{t('TEXT_BODY_4_LABEL')}</p>
                   <ul className="list-inside list-disc">
-                    <li className="mt-2">
-                      O resumo não inclui nomes ou afiliações dos autores
-                    </li>
-                    <li className="mt-2">
-                      O resumo tem no máximo quatro (4) páginas
-                    </li>
-                    <li className="mt-2">O resumo com coluna simples</li>
-                    <li className="mt-2">
-                      O resumo com espaçamento de linha simples
-                    </li>
-                    <li className="mt-2">
-                      O resumo usa fontes de pelo menos 11pt (de preferência
-                      12pt)
-                    </li>
-                    <li className="mt-2">
-                      O resumo é enviado por meio do Portal de envio de resumos.
-                      O prazo de envio de resumos pode ser consultado no site.
-                    </li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_1_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_2_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_3_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_4_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_5_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_6_LABEL')}</li>
                   </ul>
-                  <p className="mt-8 font-semibold">Modelos</p>
+                  <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
                   <ul className="list-inside list-disc">
                     <li className="mt-2">
                       <a
@@ -84,7 +47,7 @@ const Models = () => {
                         download="COBEP2021_Digest_Template_word.docx"
                         className="underline text-yellow-600"
                       >
-                        modelo.docx
+                        {t('TEXT_MODELS_LABEL')}.docx
                       </a>
                     </li>
                     <li className="mt-2">
@@ -93,7 +56,7 @@ const Models = () => {
                         download="COBEP-digest-latex-template.zip"
                         className="underline text-yellow-600"
                       >
-                        modelo.tex
+                        {t('TEXT_MODELS_LABEL')}.tex
                       </a>
                     </li>
                   </ul>
@@ -111,7 +74,7 @@ const Models = () => {
                       {t('TUTORIALS_LABEL')}
                     </Typography>
                   </div>
-                  <p>Em breve...</p>
+                  <p>{t('COMING_SON_LABEL')}</p>
                   {/* <p className="mt-5">{t('TUTORIALS_SECONDARY_TEXT_LABEL')}</p> */}
                 </Card>
               </div>

@@ -135,6 +135,24 @@ const Partners = () => {
             transition={{ ease: 'easeOut', duration: 3.5 }}
           >
             <Image
+              src="/images/UFRPE.jpg"
+              alt="Logo UFRPE"
+              width={62}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 3.5 }}
+          >
+            <Image
               src="/images/ifpb.png"
               alt="Logo IFPB"
               width={83}
@@ -145,7 +163,7 @@ const Partners = () => {
         <Grid
           item
           xs={12}
-          sm={4}
+          sm={3}
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -169,7 +187,7 @@ const Partners = () => {
         <Grid
           item
           xs={12}
-          sm={4}
+          sm={3}
           style={{
             display: 'flex',
             justifyContent: 'center',

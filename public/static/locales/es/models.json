@@ -6,5 +6,19 @@
   "PAPERS_PRIMARY_TEXT_LABEL": "Descripción 1 ...",
   "PAPERS_SECONDARY_TEXT_LABEL": "Complemento 1 ...",
   "TUTORIALS_PRIMARY_TEXT_LABEL": "Descripción 2 ...",
-  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complemento 2 ..."
+  "TUTORIALS_SECONDARY_TEXT_LABEL": "Complemento 2 ...",
+  "TITLE_1_LABEL": "Instrucciones para preparar el resumen",
+  "TEXT_MODELS_LABEL": "Modelos",
+  "COMING_SON_LABEL": "Próximamente ...",
+  "TEXT_MODEL_LABEL": "modelo",
+  "TEXT_BODY_LI_1_LABEL": "El resumen no incluye los nombres ni las afiliaciones de los autores",
+  "TEXT_BODY_LI_2_LABEL": "El resumen tiene un máximo de cuatro (4) páginas",
+  "TEXT_BODY_LI_3_LABEL": "El resumen con columna simple",
+  "TEXT_BODY_LI_4_LABEL": "El resumen con interlineado sencillo",
+  "TEXT_BODY_LI_5_LABEL": "El resumen utiliza fuentes de al menos 11 puntos (preferiblemente 12 puntos)",
+  "TEXT_BODY_LI_6_LABEL": "El resumen se envía a través del Portal de envío de resúmenes. El plazo de envío de resúmenes se puede consultar en el sitio web.",
+  "TEXT_BODY_4_LABEL": "Revisión de los requisitos; asegúrese de que:",
+  "TEXT_BODY_3_LABEL": "Consulte el sitio web de la conferencia para obtener una lista detallada de temas técnicos y el método para enviar un resumen",
+  "TEXT_BODY_2_LABEL": "Los autores que deseen publicar sus artículos en la Biblioteca Digital IEEE Xplore, deben enviar los artículos en la versión final extendida. (Plantilla que estará disponible)",
+  "TEXT_BODY_1_LABEL": "Los autores deben enviar el resumen en una sola columna, a espacio simple y un máximo de cuatro (4) páginas (las referencias no cuentan en las 4 páginas), resumiendo el artículo propuesto. El resumen debe incluir las ecuaciones principales, figuras, tablas y referencias según corresponda, pero sin nombres de autores o afiliaciones. Los resúmenes que no cumplan con estos requisitos serán rechazados sin revisión. Los resúmenes deben indicar claramente los objetivos del trabajo, su importancia en el avance del estado del arte y métodos y resultados específicos con suficiente detalle. Todos los resúmenes se someterán a un proceso de revisión por pares doble ciego para garantizar una revisión confidencial y justa."
 }
