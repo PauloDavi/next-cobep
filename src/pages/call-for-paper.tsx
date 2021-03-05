@@ -160,7 +160,7 @@ const CallForPaper = () => {
 
       <div className={classes.title}>
         <motion.div
-          animate={{ y: [-200, 0], opacity: [0, 1] }}
+          animate={{ y: [40, 0], opacity: [0, 1] }}
           transition={{ ease: 'easeOut', duration: 1.5 }}
         >
           <div>
@@ -212,7 +212,7 @@ const CallForPaper = () => {
         >
           <Grid item xs={12} md={8} lg={9} xl={10} className={classes.growDiv}>
             <motion.div
-              animate={{ x: [-200, 0], opacity: [0, 1] }}
+              animate={{ y: [40, 0], opacity: [0, 1] }}
               transition={{ ease: 'easeOut', duration: 1.5 }}
             >
               <div>
@@ -229,7 +229,7 @@ const CallForPaper = () => {
           </Grid>
           <Grid item xs={12} md={4} lg={3} xl={2}>
             <motion.div
-              animate={{ x: [200, 0], opacity: [0, 1] }}
+              animate={{ y: [40, 0], opacity: [0, 1] }}
               transition={{ ease: 'backOut', duration: 1.5 }}
             >
               <Card className={classes.imageCard}>
@@ -253,7 +253,7 @@ const CallForPaper = () => {
           </Grid>
         </Grid>
         <motion.div
-          animate={{ x: [-200, 0], opacity: [0, 1] }}
+          animate={{ y: [40, 0], opacity: [0, 1] }}
           transition={{ ease: 'easeOut', duration: 1.5 }}
         >
           <div className={classes.divSecondaryText}>

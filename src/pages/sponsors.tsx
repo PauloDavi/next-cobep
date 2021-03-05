@@ -42,7 +42,7 @@ const Sponsors = () => {
             <Grid container spacing={2}>
               <Grid item>
                 <motion.div
-                  animate={{ x: [-200, 0], opacity: [0, 1] }}
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
@@ -69,7 +69,7 @@ const Sponsors = () => {
               </Grid>
               <Grid item>
                 <motion.div
-                  animate={{ x: [-400, 0], opacity: [0, 1] }}
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
@@ -117,7 +117,7 @@ const Sponsors = () => {
             <Grid container spacing={2}>
               <Grid item>
                 <motion.div
-                  animate={{ x: [-200, 0], opacity: [0, 1] }}
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
@@ -165,7 +165,7 @@ const Sponsors = () => {
             <Grid container spacing={2}>
               <Grid item>
                 <motion.div
-                  animate={{ x: [-200, 0], opacity: [0, 1] }}
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
@@ -192,7 +192,7 @@ const Sponsors = () => {
               </Grid>
               <Grid item>
                 <motion.div
-                  animate={{ x: [-400, 0], opacity: [0, 1] }}
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a

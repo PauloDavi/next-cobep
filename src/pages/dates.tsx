@@ -39,8 +39,8 @@ const Dates = () => {
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
               <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
@@ -56,9 +56,9 @@ const Dates = () => {
             </TimelineSeparator>
             <TimelineContent>
               <motion.div
-                initial={{ x: 200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.1, duration: 1.5, type: 'spring' }}
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
@@ -71,9 +71,9 @@ const Dates = () => {
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
               <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
                   {t('DATE_TUTORIALS_DEADLINE_LABEL')}
@@ -88,9 +88,9 @@ const Dates = () => {
             </TimelineSeparator>
             <TimelineContent>
               <motion.div
-                initial={{ x: -200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 1.5, type: 'spring' }}
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
@@ -103,9 +103,9 @@ const Dates = () => {
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
               <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
                   {t('DATE_ACCEPTED_NOTIFICATION_DEADLINE_LABEL')}
@@ -120,9 +120,9 @@ const Dates = () => {
             </TimelineSeparator>
             <TimelineContent>
               <motion.div
-                initial={{ x: 200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1.5, type: 'spring' }}
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
@@ -135,9 +135,9 @@ const Dates = () => {
           <TimelineItem>
             <TimelineOppositeContent className="mt-2">
               <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
                   {t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}
@@ -151,9 +151,9 @@ const Dates = () => {
             </TimelineSeparator>
             <TimelineContent>
               <motion.div
-                initial={{ x: -200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: 'spring' }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.7, duration: 1.5, type: 'spring' }}
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">

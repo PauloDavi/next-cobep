@@ -91,7 +91,7 @@ const Organization = () => {
   return (
     <div>
       <motion.div
-        animate={{ x: [-200, 0], opacity: [0, 1] }}
+        animate={{ y: [40, 0], opacity: [0, 1] }}
         transition={{ ease: 'easeOut', duration: 1.5 }}
       >
         <div className={classes.divSecondaryText}>
@@ -108,7 +108,7 @@ const Organization = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-200, 0], opacity: [0, 1] }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 1.5 }}
           >
             <Image
@@ -126,7 +126,7 @@ const Organization = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-400, 0], opacity: [0, 1] }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2 }}
           >
             <Image
@@ -144,7 +144,7 @@ const Organization = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-600, 0], opacity: [0, 1] }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
@@ -162,7 +162,7 @@ const Organization = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-800, 0], opacity: [0, 1] }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 3 }}
           >
             <Image

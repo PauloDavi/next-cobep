@@ -91,8 +91,8 @@ const TechnicalSupport = () => {
   return (
     <div>
       <motion.div
-        animate={{ x: [-200, 0], opacity: [0, 1] }}
-        transition={{ ease: 'easeOut', duration: 1.5 }}
+        animate={{ y: [40, 0], opacity: [0, 1] }}
+        transition={{ ease: 'easeOut', duration: 2.5 }}
       >
         <div className={classes.divSecondaryText}>
           <Typography className={classes.secondaryText} variant="h4">
@@ -113,8 +113,8 @@ const TechnicalSupport = () => {
         >
           <motion.div
             className="px-10"
-            animate={{ x: [-200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 1.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/sobraep.png"
@@ -132,8 +132,8 @@ const TechnicalSupport = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [-200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 1.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/logo_IEEE.png"

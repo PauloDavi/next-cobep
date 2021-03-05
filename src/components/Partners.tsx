@@ -91,7 +91,7 @@ const Partners = () => {
   return (
     <div style={{ maxWidth: '100vw' }}>
       <motion.div
-        animate={{ x: [200, 0], opacity: [0, 1] }}
+        animate={{ y: [40, 0], opacity: [0, 1] }}
         transition={{ ease: 'easeOut', duration: 1.5 }}
       >
         <div className={classes.divSecondaryText}>
@@ -113,8 +113,8 @@ const Partners = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/IFRN.png"
@@ -131,8 +131,8 @@ const Partners = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/UFRPE.jpg"
@@ -149,8 +149,8 @@ const Partners = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            animate={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/ifpb.png"
@@ -172,8 +172,8 @@ const Partners = () => {
         >
           <motion.div
             className="px-10"
-            animate={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/ufrn.png"
@@ -196,8 +196,8 @@ const Partners = () => {
         >
           <motion.div
             className="px-10"
-            animate={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3.5 }}
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
               src="/images/ABMR.png"

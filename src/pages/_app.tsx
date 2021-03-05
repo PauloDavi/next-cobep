@@ -50,7 +50,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <AnimatePresence exitBeforeEnter>
           <Header key="header" />
           <CssBaseline key="cssBaseLine" />
-          <div className="mb-auto">
+          <div className="mb-auto min-h-screen">
             <Head>
               <title>COBEP</title>
             </Head>
