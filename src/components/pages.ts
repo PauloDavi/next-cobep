@@ -31,7 +31,7 @@ const pages = [
   },
   {
     menuTitleTranslate: 'FAQ_LABEL',
-    pageURL: '/',
+    pageURL: '/faq',
   },
 ];
 

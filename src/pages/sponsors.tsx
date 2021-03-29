@@ -69,6 +69,33 @@ const Sponsors = () => {
               </Grid>
               <Grid item>
                 <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.alsolenergia.com.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/alsol.png"
+                        alt="ALSOL"
+                        height={100}
+                        width={313}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
                   animate={{ y: [-400, 0], opacity: [0, 1] }}
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
@@ -212,6 +239,29 @@ const Sponsors = () => {
                         alt="PHB"
                         height={50}
                         width={82}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a href="https://funpec.br/" target="_blank" rel="noreferrer">
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/FUNPEC_principal.png"
+                        alt="FUNPEC"
+                        height={50}
+                        width={109}
                       />
                     </Card>
                   </a>

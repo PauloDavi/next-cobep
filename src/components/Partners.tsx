@@ -171,7 +171,7 @@ const Partners = () => {
           }}
         >
           <motion.div
-            className="px-10"
+            className="px-10 w-80"
             animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
@@ -195,7 +195,7 @@ const Partners = () => {
           }}
         >
           <motion.div
-            className="px-10"
+            className="px-10 w-80"
             animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
@@ -204,6 +204,54 @@ const Partners = () => {
               alt="Logo ABMR"
               layout="intrinsic"
               width={360}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={3}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <motion.div
+            className="px-10 w-80"
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
+          >
+            <Image
+              src="/images/sponsors/alsol.png"
+              layout="intrinsic"
+              alt="Logo ALSOL"
+              width={313}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={3}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <motion.div
+            className="px-10 w-80"
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
+          >
+            <Image
+              src="/images/sponsors/FUNPEC_principal.png"
+              layout="intrinsic"
+              alt="Logo FUNPEC"
+              width={219}
               height={100}
             />
           </motion.div>

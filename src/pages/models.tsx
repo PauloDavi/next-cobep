@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { Card, Grid, Typography } from '@material-ui/core';
+import { Card, Grid, Typography, Button } from '@material-ui/core';
 import { useTranslation } from '../../i18n';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -38,6 +37,7 @@ const Models = () => {
                     <li className="mt-2">{t('TEXT_BODY_LI_4_LABEL')}</li>
                     <li className="mt-2">{t('TEXT_BODY_LI_5_LABEL')}</li>
                     <li className="mt-2">{t('TEXT_BODY_LI_6_LABEL')}</li>
+                    <li className="mt-2">{t('TEXT_BODY_LI_7_LABEL')}</li>
                   </ul>
                   <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
                   <ul className="list-inside list-disc">
@@ -80,6 +80,17 @@ const Models = () => {
               </div>
             </Grid>
           </Grid>
+        </div>
+        <div className="flex justify-center mb-8">
+          <a
+            href="https://cobep2021.softaliza.com.br/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="contained" color="secondary">
+              {t('SITEM_SUBMIT_BUTTON_LABEL')}
+            </Button>
+          </a>
         </div>
       </div>
     </>

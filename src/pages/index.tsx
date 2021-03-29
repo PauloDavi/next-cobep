@@ -56,9 +56,36 @@ const Home = () => {
           interval={4000}
           animation="cubeAnimation"
         >
-          <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
-          <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
-          <div data-src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg" />
+          <div
+            data-src="/images/parque_da_lagoa.jpg"
+            className="flex justify-center items-center"
+          >
+            <Image src="/images/parque_da_lagoa.jpg" layout="fill" />
+            <Typography className="text-white text-4xl">Parques</Typography>
+          </div>
+          <div
+            data-src="/images/topo_hotel_tambau.jpg"
+            className="flex justify-center items-center"
+          >
+            <Image src="/images/topo_hotel_tambau.jpg" layout="fill" />
+            <Typography className="text-white text-4xl">Praia</Typography>
+          </div>
+          <div
+            data-src="/images/alvarenga.jpg"
+            className="flex justify-center items-center"
+          >
+            <Image src="/images/alvarenga.jpg" layout="fill" />
+            <Typography className="text-white text-4xl">Passeios</Typography>
+          </div>
+          <div
+            data-src="/images/mapa_jampa.jpg"
+            className="flex justify-center items-center"
+          >
+            <Image src="/images/mapa_jampa.jpg" layout="fill" />
+            <Typography className="text-white text-4xl">
+              Tudo uma beleza
+            </Typography>
+          </div>
         </AutoplaySlider>
         <div className="px-8 pb-16 pt-5 text-white text-md leading-none">
           <Grid container spacing={4}>
@@ -139,7 +166,7 @@ const Home = () => {
             <div className="py-5 max-w-sm h-96">
               <img
                 className="object-cover w-60 h-full rounded-l"
-                src="https://s2.glbimg.com/HqOu1Nq3WLip_5j1Q9rg4ZQEFgg=/0x0:1118x566/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/R/H/5ODJRwTiuFPPUfPAMFLw/amojampa-joaopessoa-julianasantossecom2.jpg"
+                src="/images/barco.jpg"
                 alt="CALL FOR TUTORIALS"
               />
             </div>

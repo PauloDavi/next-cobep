@@ -210,31 +210,33 @@ const Header = () => {
             </>
           ) : (
             <div className={classes.headerOptions}>
-              {pages.map((page) => {
-                const { menuTitleTranslate, pageURL, children } = page;
+              <>
+                {pages.map((page) => {
+                  const { menuTitleTranslate, pageURL, children } = page;
 
-                if (children) {
-                  return (
-                    <div key={menuTitleTranslate}>
-                      <MyMenu menuTitleTranslate={menuTitleTranslate}>
-                        {children}
-                      </MyMenu>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <Link href={pageURL || '/'}>
-                      <Button
-                        key={menuTitleTranslate}
-                        variant="text"
-                        color="inherit"
-                      >
-                        {t(menuTitleTranslate)}
-                      </Button>
-                    </Link>
-                  );
-                }
-              })}
+                  if (children) {
+                    return (
+                      <div key={menuTitleTranslate}>
+                        <MyMenu menuTitleTranslate={menuTitleTranslate}>
+                          {children}
+                        </MyMenu>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <Link href={pageURL || '/'}>
+                        <Button
+                          key={menuTitleTranslate}
+                          variant="text"
+                          color="inherit"
+                        >
+                          {t(menuTitleTranslate)}
+                        </Button>
+                      </Link>
+                    );
+                  }
+                })}
+              </>
               <LanguageSwitcher />
             </div>
           )}

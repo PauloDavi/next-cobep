@@ -12,7 +12,7 @@ import {
   TimelineDot,
 } from '@material-ui/lab';
 
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Button } from '@material-ui/core';
 
 import { GetStaticProps } from 'next';
 import { motion } from 'framer-motion';
@@ -164,6 +164,17 @@ const Dates = () => {
             </TimelineContent>
           </TimelineItem>
         </Timeline>
+        <div className="flex justify-center mt-8 mb-8">
+          <a
+            href="https://cobep2021.softaliza.com.br/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="contained" color="secondary">
+              {t('SITEM_SUBMIT_BUTTON_LABEL')}
+            </Button>
+          </a>
+        </div>
       </div>
     </>
   );
