@@ -76,11 +76,25 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              4. {t('ACCORDION_3_BODY_LABEL')}
-              <Link href="https://cobep.vercel.app/models" target="_blank">
-                <a>https://cobep.vercel.app/models</a>
+              {t('ACCORDION_3_BODY_LABEL')}
+              <Link href="https://cobep.vercel.app/models">
+                <a target="_blank">https://cobep.vercel.app/models</a>
               </Link>
             </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography className={classes.heading}>
+              4. {t('ACCORDION_8_TITLE_LABEL')}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{t('ACCORDION_8_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -137,20 +151,6 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>{t('ACCORDION_7_BODY_LABEL')}</Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <Typography className={classes.heading}>
-              9. {t('ACCORDION_8_TITLE_LABEL')}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{t('ACCORDION_8_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
       </div>

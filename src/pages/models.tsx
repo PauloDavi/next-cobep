@@ -47,7 +47,7 @@ const Models = () => {
                         download="COBEP2021_Digest_Template_word.docx"
                         className="underline text-yellow-600"
                       >
-                        {t('TEXT_MODELS_LABEL')}.docx
+                        <>{t('TEXT_MODELS_LABEL')}</>.docx
                       </a>
                     </li>
                     <li className="mt-2">
@@ -56,7 +56,7 @@ const Models = () => {
                         download="COBEP-digest-latex-template.zip"
                         className="underline text-yellow-600"
                       >
-                        {t('TEXT_MODELS_LABEL')}.tex
+                        <>{t('TEXT_MODELS_LABEL')}</>.tex
                       </a>
                     </li>
                   </ul>
