@@ -17,6 +17,7 @@ import { motion } from 'framer-motion';
 
 import { useTranslation } from '../../i18n';
 import { GetStaticProps } from 'next';
+import { strict } from 'assert';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -251,9 +252,11 @@ const CallForPaper = () => {
                 <Typography variant="subtitle1">
                   <strong>{t('TEXT_DATE_1_LABEL')}</strong> {t('DATE_1_LABEL')}
                   <br />
-                  <strong>{t('TEXT_DATE_2_LABEL')}</strong> {t('DATE_2_LABEL')}
+                  <strong>{t('TEXT_DATE_2_LABEL')}</strong>{' '}
+                  <s>{t('DATE_2_LABEL')}</s> {t('DATE_2_LABEL_CORRECT')}
                   <br />
-                  <strong>{t('TEXT_DATE_3_LABEL')}</strong> {t('DATE_3_LABEL')}
+                  <strong>{t('TEXT_DATE_3_LABEL')}</strong>{' '}
+                  <s>{t('DATE_3_LABEL')}</s> {t('DATE_3_LABEL_CORRECT')}
                   <br />
                   <strong>{t('TEXT_DATE_4_LABEL')}</strong> {t('DATE_4_LABEL')}
                   <br />

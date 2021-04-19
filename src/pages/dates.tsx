@@ -44,7 +44,8 @@ const Dates = () => {
                 transition={{ duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('DATE_RESUME_DEADLINE_LABEL')}
+                  <s>{t('DATE_RESUME_DEADLINE_LABEL')}</s>{' '}
+                  {t('DATE_RESUME_DEADLINE_LABEL_CORRECT')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
@@ -76,7 +77,8 @@ const Dates = () => {
                 transition={{ delay: 0.2, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('DATE_TUTORIALS_DEADLINE_LABEL')}
+                  <s>{t('DATE_TUTORIALS_DEADLINE_LABEL')}</s>{' '}
+                  {t('DATE_TUTORIALS_DEADLINE_LABEL_CORRECT')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
