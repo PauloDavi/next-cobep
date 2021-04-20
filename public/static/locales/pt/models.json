@@ -23,5 +23,12 @@
   "TEXT_BODY_4_LABEL": "Recapitulação dos requisitos - certifique-se de que:",
   "TEXT_BODY_3_LABEL": "Consulte o site da conferência para obter uma lista detalhada de tópicos técnicos e o método de envio de resumo.",
   "TEXT_BODY_2_LABEL": "Os autores que desejarem publicar seus artigos na Biblioteca Digital IEEE Xplore, devem enviar os artigos da versão final estendida. (Modelo a ser disponibilizado)",
-  "TEXT_BODY_1_LABEL": " Os autores devem enviar o resumo com coluna simples, espaçamento simples e no máximo quatro (4) páginas (as referências não contam nas 4 páginas), resumindo o artigo proposto. O resumo deve incluir as principais equações, figuras, tabelas e referências conforme apropriado, mas sem nomes de autores ou afiliações. Os resumos que não estiverem em conformidade com esses requisitos serão rejeitados sem revisão. Os resumos devem indicar claramente os objetivos do trabalho, sua importância no avanço do estado da arte e os métodos e resultados específicos em detalhes suficientes. Todos os resumos passarão por um processo duplo-cego de revisão por pares para garantir uma revisão confidencial e justa."
+  "TEXT_BODY_1_LABEL": " Os autores devem enviar o resumo com coluna simples, espaçamento simples e no máximo quatro (4) páginas (as referências não contam nas 4 páginas), resumindo o artigo proposto. O resumo deve incluir as principais equações, figuras, tabelas e referências conforme apropriado, mas sem nomes de autores ou afiliações. Os resumos que não estiverem em conformidade com esses requisitos serão rejeitados sem revisão. Os resumos devem indicar claramente os objetivos do trabalho, sua importância no avanço do estado da arte e os métodos e resultados específicos em detalhes suficientes. Todos os resumos passarão por um processo duplo-cego de revisão por pares para garantir uma revisão confidencial e justa.",
+  "TITLE_TUTORIALS_1_LABEL": "Informações para os tutoriais",
+  "TEXT_BODY_TUTORIALS_1_LABEL": "As aulas tutoriais receberão inscrição gratuita. O tutorial deve durar 3 horas. Máximo de 5 páginas. Todos os tutoriais são realizados no domingo, 7 de novembro de 2021, pela manhã ou à tarde.",
+  "TEXT_BODY_TUTORIALS_2_LABEL": "Instruções para elaboração da proposta do tutorial",
+  "TEXT_BODY_LI_TUTORIALS_1_LABEL": "Máximo de 5 páginas.",
+  "TEXT_BODY_LI_TUTORIALS_2_LABEL": "Todas as páginas são formatadas com margens de uma polegada de cada lado.",
+  "TEXT_BODY_LI_TUTORIALS_3_LABEL": "Todos os textos usam espaço simples, Times New Roman, tinta preta e um tamanho de fonte de 11 ou 12.",
+  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga o item no documento modelo"
 }

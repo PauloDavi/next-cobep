@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 const supports = [
   {
     category: 'PRESIDENT_OF_THE_BRAZILIAN_SOCIETY_OF_POWER_ELECTRONICS',
+    categoryCategory: 'SOCIETY_OF_POWER_ELECTRONICS',
     people: [
       {
         name: 'Marcello Mezaroba (UDESC)',
@@ -116,6 +117,12 @@ const TechnicalSupport = () => {
               >
                 <div className="text-lg font-bold text-blue-500">
                   {t(support.category)}
+                  {support.categoryCategory && (
+                    <>
+                      <br />
+                      {t(support.categoryCategory)}
+                    </>
+                  )}
                 </div>
                 {support.people.map((item, index) => (
                   <div className={clsx(index !== 0 && 'mt-4')} key={item.name}>

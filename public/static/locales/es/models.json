@@ -23,5 +23,12 @@
   "TEXT_BODY_4_LABEL": "Revisión de los requisitos; asegúrese de que:",
   "TEXT_BODY_3_LABEL": "Consulte el sitio web de la conferencia para obtener una lista detallada de temas técnicos y el método para enviar un resumen",
   "TEXT_BODY_2_LABEL": "Los autores que deseen publicar sus artículos en la Biblioteca Digital IEEE Xplore, deben enviar los artículos en la versión final extendida. (Plantilla que estará disponible)",
-  "TEXT_BODY_1_LABEL": "Los autores deben enviar el resumen en una sola columna, a espacio simple y un máximo de cuatro (4) páginas (las referencias no cuentan en las 4 páginas), resumiendo el artículo propuesto. El resumen debe incluir las ecuaciones principales, figuras, tablas y referencias según corresponda, pero sin nombres de autores o afiliaciones. Los resúmenes que no cumplan con estos requisitos serán rechazados sin revisión. Los resúmenes deben indicar claramente los objetivos del trabajo, su importancia en el avance del estado del arte y métodos y resultados específicos con suficiente detalle. Todos los resúmenes se someterán a un proceso de revisión por pares doble ciego para garantizar una revisión confidencial y justa."
+  "TEXT_BODY_1_LABEL": "Los autores deben enviar el resumen en una sola columna, a espacio simple y un máximo de cuatro (4) páginas (las referencias no cuentan en las 4 páginas), resumiendo el artículo propuesto. El resumen debe incluir las ecuaciones principales, figuras, tablas y referencias según corresponda, pero sin nombres de autores o afiliaciones. Los resúmenes que no cumplan con estos requisitos serán rechazados sin revisión. Los resúmenes deben indicar claramente los objetivos del trabajo, su importancia en el avance del estado del arte y métodos y resultados específicos con suficiente detalle. Todos los resúmenes se someterán a un proceso de revisión por pares doble ciego para garantizar una revisión confidencial y justa.",
+  "TITLE_TUTORIALS_1_LABEL": "Información para tutoriales",
+  "TEXT_BODY_TUTORIALS_1_LABEL": "Las clases de tutoría se recibirán de forma gratuita. La tutoría debe durar 3 horas. Máximo de 5 páginas. Todas las tutorías se llevan a cabo el domingo 7 de noviembre de 2021, por la mañana o por la tarde.",
+  "TEXT_BODY_TUTORIALS_2_LABEL": "Instrucciones para preparar la propuesta del tutorial",
+  "TEXT_BODY_LI_TUTORIALS_1_LABEL": "Máximo de 5 páginas",
+  "TEXT_BODY_LI_TUTORIALS_2_LABEL": "Todas las páginas están formateadas con márgenes de una pulgada en cada lado.",
+  "TEXT_BODY_LI_TUTORIALS_3_LABEL": "Todos los textos usan espacio simple, Times New Roman, tinta negra y un tamaño de fuente de 11 o 12",
+  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga el elemento en el documento modelo"
 }

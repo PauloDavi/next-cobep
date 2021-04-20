@@ -90,7 +90,9 @@ const Home = () => {
         <div className="px-8 pb-16 pt-5 text-white text-md leading-none">
           <Grid container spacing={4}>
             <Grid item xs={12}>
-              <Typography variant="h3">{t('TITLE_LABEL')}</Typography>
+              <h1 className="text-center text-4xl md:text-5xl lg:text-6xl">
+                {t('TITLE_LABEL')}
+              </h1>
             </Grid>
             <Grid item xs={12} sm={6}>
               <p className="text-xl">{t('DESCRIPTION_FIRST_LABEL')}</p>
@@ -128,26 +130,27 @@ const Home = () => {
           <Grid className="flex justify-center items-center" item xs={12}>
             <Card
               className={clsx(
-                'text-center px-5 pb-8 pt-5 h-full max-w-sm',
+                'text-center px-8 pb-8 pt-5 h-full',
                 classes.shadow
               )}
             >
               <a
-                href="/documents/call_for_paper.pdf"
-                download="callForPaper.pdf"
+                href="/documents/callForPaper.pdf"
+                target="_blank"
                 className="flex justify-center"
               >
                 <div className="text-xl text-center mb-5">
                   <Typography variant="h5" color="secondary">
                     {t('CALL_FOR_PAPERS_AND_TUTORIALS_LABEL')}
                   </Typography>
-                  <div className="mt-4">
+                  <div className="mt-4 border-yellow-500 border-2 rounded">
                     <Image
-                      className="border-gray-300 border-2 rounded"
-                      src="/images/test.jpeg"
+                      className="rounded-sm"
+                      src="/images/call_for_paper.png"
                       alt={t('CALL_FOR_PAPERS_AND_TUTORIALS_LABEL')}
-                      width={256}
-                      height={200}
+                      quality={100}
+                      width={500}
+                      height={350}
                     />
                   </div>
                 </div>

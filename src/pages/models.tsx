@@ -68,17 +68,45 @@ const Models = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <div className="flex justify-center">
-                <Card
-                  elevation={5}
-                  className="text-center px-5 pb-8 pt-5 h-full max-w-lg w-full"
-                >
-                  <div className="text-xl text-center mb-5">
+                <Card elevation={5} className="px-5 pb-8 pt-5 h-full max-w-lg">
+                  <div className="text-xl font-bold text-center mb-5">
                     <Typography variant="h5" color="secondary">
                       {t('TUTORIALS_LABEL')}
                     </Typography>
                   </div>
-                  <p>{t('COMING_SON_LABEL')}</p>
-                  {/* <p className="mt-5">{t('TUTORIALS_SECONDARY_TEXT_LABEL')}</p> */}
+                  <p className="text-lg font-semibold">
+                    {t('TITLE_TUTORIALS_1_LABEL')}
+                  </p>
+                  <p className="mt-5">{t('TEXT_BODY_TUTORIALS_1_LABEL')}</p>
+                  <p className="mt-8 font-semibold">
+                    {t('TEXT_BODY_TUTORIALS_2_LABEL')}
+                  </p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      {t('TEXT_BODY_LI_TUTORIALS_1_LABEL')}
+                    </li>
+                    <li className="mt-2">
+                      {t('TEXT_BODY_LI_TUTORIALS_2_LABEL')}
+                    </li>
+                    <li className="mt-2">
+                      {t('TEXT_BODY_LI_TUTORIALS_3_LABEL')}
+                    </li>
+                    <li className="mt-2">
+                      {t('TEXT_BODY_LI_TUTORIALS_4_LABEL')}
+                    </li>
+                  </ul>
+                  <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      <a
+                        href="/documents/COBEP2021-Tutorial-Proposal-Template.docx"
+                        download="COBEP2021_Digest_Template_word.docx"
+                        className="underline text-yellow-600"
+                      >
+                        <>{t('TEXT_MODELS_LABEL')}</>.docx
+                      </a>
+                    </li>
+                  </ul>
                 </Card>
               </div>
             </Grid>
