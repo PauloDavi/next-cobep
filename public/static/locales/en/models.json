@@ -1,6 +1,6 @@
 {
-  "PAGE_TITLE_LABEL": "COBEP 2021 - Models",
-  "MODELS_LABEL": "Models",
+  "PAGE_TITLE_LABEL": "COBEP 2021 - Templates",
+  "MODELS_LABEL": "Templates",
   "PAPERS_LABEL": "Papers",
   "TUTORIALS_LABEL": "Tutorials",
   "PAPERS_PRIMARY_TEXT_LABEL": "Description 1 ...",
@@ -8,7 +8,7 @@
   "TUTORIALS_PRIMARY_TEXT_LABEL": "Description 2 ...",
   "TUTORIALS_SECONDARY_TEXT_LABEL": "Complement 2 ...",
   "TITLE_1_LABEL": "Summary writing instructions",
-  "TEXT_MODELS_LABEL": "Models",
+  "TEXT_MODELS_LABEL": "Templates",
   "COMING_SON_LABEL": "Coming soon ...",
   "SITEM_SUBMIT_BUTTON_LABEL": "Submission system",
   "TEXT_MODEL_LABEL": "model",
