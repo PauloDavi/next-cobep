@@ -121,6 +121,33 @@ const Sponsors = () => {
                   </a>
                 </motion.div>
               </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://delorenzo.com.br"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/LOGO_DE_LORENZO.png"
+                        alt="De Lorenzo"
+                        height={100}
+                        width={95}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
             </Grid>
           </div>
         </section>
@@ -262,6 +289,60 @@ const Sponsors = () => {
                         alt="FUNPEC"
                         height={50}
                         width={109}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.bksv.com/pt"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/HBK_Primary_RGB_Dark_Blue.png"
+                        alt="PHB"
+                        height={50}
+                        width={145}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="http://www.okkrep.com.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/Logos_Dist_Okk.png"
+                        alt="PHB"
+                        height={50}
+                        width={79}
                       />
                     </Card>
                   </a>
