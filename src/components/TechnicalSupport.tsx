@@ -104,23 +104,17 @@ const TechnicalSupport = () => {
         <Grid
           item
           xs={12}
-          sm={4}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.div
-            className="px-10"
             animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
-              src="/images/sobraep.png"
-              alt="Logo SOBRAEP"
-              layout="intrinsic"
-              width={366}
+              src="/images/logo_IEEE.png"
+              alt="Logo IEEE"
+              width={95}
               height={100}
             />
           </motion.div>
@@ -136,9 +130,45 @@ const TechnicalSupport = () => {
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
-              src="/images/logo_IEEE.png"
-              alt="Logo IEEE"
+              src="/images/IEEE_PELS.png"
+              alt="Logo IEEE PELS"
+              width={90}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
+          >
+            <Image
+              src="/images/PELS_IAS_UFCG.png"
+              alt="Logo IAS UFCG"
               width={95}
+              height={100}
+            />
+          </motion.div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={2}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <motion.div
+            animate={{ y: [40, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2.5 }}
+          >
+            <Image
+              src="/images/PELS_IAS_UFPB.png"
+              alt="Logo IAS UFPB"
+              width={75}
               height={100}
             />
           </motion.div>
