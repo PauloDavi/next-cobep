@@ -8,6 +8,7 @@ import Organization from '../components/Organization';
 import Partners from '../components/Partners';
 import TechnicalSupport from '../components/TechnicalSupport';
 import { motion } from 'framer-motion';
+import Realization from '../components/Realization';
 
 const Sponsors = () => {
   const theme = useTheme();
@@ -353,6 +354,7 @@ const Sponsors = () => {
         </section>
       </div>
 
+      <Realization />
       <Organization />
       <Partners />
       <TechnicalSupport />

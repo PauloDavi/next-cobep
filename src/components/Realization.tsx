@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: 14,
       color: '#ffffff',
     },
-    divOrganization: {
+    divTechnicalSupport: {
       display: 'flex',
       boxShadow: theme.shadows[19],
       flexDirection: 'column',
@@ -36,13 +36,13 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: 5,
       backgroundImage: `linear-gradient(to right,  ${theme.palette.primary.main}, ${theme.palette.primary.dark}, ${theme.palette.secondary.main})`,
     },
-    divOrganizationText: {
+    divTechnicalSupportText: {
       display: 'flex',
       marginBottom: 5,
       justifyContent: 'center',
       alignItems: 'center',
     },
-    ORGANIZATION_LABELTextBold: {
+    organizationTextBold: {
       fontWeight: 'bold',
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
       color: '#ffffff',
     },
-    ORGANIZATION_LABELText: {
+    organizationText: {
       marginLeft: 10,
       fontSize: 14,
       [theme.breakpoints.up('sm')]: {
@@ -68,14 +68,14 @@ const useStyles = makeStyles((theme: Theme) =>
     divSecondaryText: {
       height: 'auto',
       padding: '5px 15px',
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: theme.palette.secondary.main,
       color: '#ffffff',
       marginBottom: 20,
       display: 'flex',
       alignItems: 'center',
-      maxWidth: 180,
-      borderRadius: '0 8px 8px 0',
-      marginRight: 'auto',
+      maxWidth: 200,
+      borderRadius: '8px 0 0 8px',
+      marginLeft: 'auto',
     },
     secondaryText: {
       fontSize: 24,
@@ -83,92 +83,49 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Organization = () => {
+const Realization = () => {
   const { t } = useTranslation('footerImages');
 
   const classes = useStyles();
 
   return (
-    <div>
+    <div style={{ maxWidth: '100vw' }}>
       <motion.div
         animate={{ y: [40, 0], opacity: [0, 1] }}
         transition={{ ease: 'easeOut', duration: 1.5 }}
       >
         <div className={classes.divSecondaryText}>
           <Typography className={classes.secondaryText} variant="h4">
-            {t('ORGANIZATION_LABEL')}
+            {t('REALIZATION_LABEL')}
           </Typography>
         </div>
       </motion.div>
-      <Grid className={classes.divLogos} container spacing={2}>
+      <Grid
+        className={classes.divLogos}
+        direction="row-reverse"
+        container
+        spacing={2}
+      >
         <Grid
           item
           xs={12}
-          sm={2}
-          style={{ display: 'flex', justifyContent: 'center' }}
+          sm={4}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
           <motion.div
-            animate={{ y: [40, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 1.5 }}
-          >
-            <Image
-              src="/images/logo_UFPB.png"
-              alt="Logo UFPB"
-              width={70}
-              height={100}
-            />
-          </motion.div>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={3}
-          style={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <motion.div
-            animate={{ y: [40, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 2 }}
-          >
-            <Image
-              src="/images/logo_CEAR.png"
-              alt="Logo Cear"
-              width={100}
-              height={100}
-            />
-          </motion.div>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={2}
-          style={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <motion.div
+            className="px-10"
             animate={{ y: [40, 0], opacity: [0, 1] }}
             transition={{ ease: 'easeOut', duration: 2.5 }}
           >
             <Image
-              src="/images/logo_ppge.jpg"
-              alt="Logo PPGE"
-              width={58.5}
-              height={100}
-            />
-          </motion.div>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={2}
-          style={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <motion.div
-            animate={{ y: [40, 0], opacity: [0, 1] }}
-            transition={{ ease: 'easeOut', duration: 3 }}
-          >
-            <Image
-              src="/images/logo_SG2.png"
-              alt="Logo SG2"
-              width={85}
+              src="/images/sobraep.png"
+              alt="Logo SOBRAEP"
+              layout="intrinsic"
+              width={366}
               height={100}
             />
           </motion.div>
@@ -186,4 +143,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Organization;
+export default Realization;

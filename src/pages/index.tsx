@@ -20,6 +20,7 @@ import clsx from 'clsx';
 
 import Organization from '../components/Organization';
 import TechnicalSupport from '../components/TechnicalSupport';
+import Realization from '../components/Realization';
 
 import Image from 'next/image';
 import Partners from '../components/Partners';
@@ -202,6 +203,7 @@ const Home = () => {
         </div>
       </div>
 
+      <Realization />
       <Organization />
       <Partners />
       <TechnicalSupport />
