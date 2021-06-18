@@ -31,7 +31,7 @@ const Sponsors = () => {
             <div className="flex flex-row items-center text-gray-600 ml-4">
               <Image
                 src="/images/medals/gold.png"
-                alt={t('GOLD_MEDAL_LABEL')}
+                alt={t('GOLD_MEDAL_LABEL') as string}
                 height={80}
                 width={60}
               />
@@ -149,6 +149,33 @@ const Sponsors = () => {
                   </a>
                 </motion.div>
               </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.typhoon-hil.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/Typhoon-HIL.png"
+                        alt="Typhoon HIL"
+                        height={100}
+                        width={132}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
             </Grid>
           </div>
         </section>
@@ -160,7 +187,7 @@ const Sponsors = () => {
             <div className="flex flex-row items-center text-gray-600 ml-4">
               <Image
                 src="/images/medals/silver.png"
-                alt={t('SILVER_MEDAL_LABEL')}
+                alt={t('SILVER_MEDAL_LABEL') as string}
                 height={72}
                 width={54}
               />
@@ -230,6 +257,60 @@ const Sponsors = () => {
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
+                    href="https://institucional.taesa.com.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/taesa.png"
+                        alt="TAESA"
+                        height={50}
+                        width={136}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.moura.com.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/moura.png"
+                        alt="Moura"
+                        height={50}
+                        width={95}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
                     href="http://www.okkrep.com.br/"
                     target="_blank"
                     rel="noreferrer"
@@ -262,7 +343,7 @@ const Sponsors = () => {
             <div className="flex flex-row items-center text-gray-600 ml-4">
               <Image
                 src="/images/medals/bronze.png"
-                alt={t('BRONZE_MEDAL_LABEL')}
+                alt={t('BRONZE_MEDAL_LABEL') as string}
                 height={64}
                 width={48}
               />
@@ -321,6 +402,33 @@ const Sponsors = () => {
                         alt="PHB"
                         height={50}
                         width={82}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-400, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="http://www.supplier.ind.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/supplier.jpg"
+                        alt="Supplier"
+                        height={50}
+                        width={50}
                       />
                     </Card>
                   </a>

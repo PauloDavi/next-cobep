@@ -150,6 +150,7 @@ const Dates = () => {
               <TimelineDot color="secondary">
                 <SendOutlinedIcon />
               </TimelineDot>
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
               <motion.div
@@ -160,6 +161,37 @@ const Dates = () => {
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
                     {t('FINAL_SUBMISSION_DEADLINE_LABEL')}
+                  </Typography>
+                </Paper>
+              </motion.div>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent className="mt-2">
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  {t('DATE_RESUME_DEADLINE_LABEL')}
+                </Typography>
+              </motion.div>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot color="secondary">
+                <DescriptionOutlinedIcon className="text-white" />
+              </TimelineDot>
+            </TimelineSeparator>
+            <TimelineContent>
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.7, duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('RESUME_DEADLINE_LABEL')} ({t('INDUSTRY_SESSION_LABEL')})
                   </Typography>
                 </Paper>
               </motion.div>
