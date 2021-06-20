@@ -142,13 +142,13 @@ const Dates = () => {
                 transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}
+                  {t('DATE_INDUSTRY_SESSION_LABEL')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
-                <SendOutlinedIcon />
+                <DescriptionOutlinedIcon className="text-white" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
@@ -160,7 +160,7 @@ const Dates = () => {
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
-                    {t('FINAL_SUBMISSION_DEADLINE_LABEL')}
+                    {t('RESUME_DEADLINE_LABEL')} ({t('INDUSTRY_SESSION_LABEL')})
                   </Typography>
                 </Paper>
               </motion.div>
@@ -174,13 +174,13 @@ const Dates = () => {
                 transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('DATE_INDUSTRY_SESSION_LABEL')}
+                  {t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
-                <DescriptionOutlinedIcon className="text-white" />
+                <SendOutlinedIcon />
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent>
@@ -191,7 +191,7 @@ const Dates = () => {
               >
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
-                    {t('RESUME_DEADLINE_LABEL')} ({t('INDUSTRY_SESSION_LABEL')})
+                    {t('FINAL_SUBMISSION_DEADLINE_LABEL')}
                   </Typography>
                 </Paper>
               </motion.div>
