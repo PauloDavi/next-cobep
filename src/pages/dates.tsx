@@ -179,8 +179,8 @@ const Dates = () => {
               </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="secondary">
-                <SendOutlinedIcon />
+              <TimelineDot color="primary">
+                <SendOutlinedIcon className="text-white" />
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent>
