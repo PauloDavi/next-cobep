@@ -65,8 +65,10 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     mainTitle: {
       fontWeight: 'bold',
+      marginTop: 8,
+      fontSize: 28,
       [theme.breakpoints.down('xs')]: {
-        fontSize: 32,
+        fontSize: 24,
       },
     },
     subTitle: {
@@ -219,6 +221,7 @@ const CallForPaper = () => {
               transition={{ ease: 'easeOut', duration: 1.5 }}
             >
               <div>
+                <Typography>{t('DESCRIPTION_TEXT_LABEL')}</Typography>
                 <Typography
                   className={classes.mainTitle}
                   variant="h3"
@@ -226,7 +229,15 @@ const CallForPaper = () => {
                 >
                   {t('CALL_FOR_WOKS_LABEL')}
                 </Typography>
-                <Typography>{t('DESCRIPTION_TEXT_LABEL')}</Typography>
+                <Typography>{t('DESCRIPTION_CALL_LABEL')}</Typography>
+                <Typography
+                  className={classes.mainTitle}
+                  variant="h3"
+                  color="primary"
+                >
+                  {t('CALL_TUTORIAL_LABEL')}
+                </Typography>
+                <Typography>{t('DESCRIPTION_TUTORIAS_LABEL')}</Typography>
               </div>
               <div className="flex justify-center mt-8 mb-8">
                 <a

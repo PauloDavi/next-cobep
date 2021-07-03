@@ -27,6 +27,16 @@ const Faq = () => {
   const { t } = useTranslation('faq');
   const classes = useStyles();
 
+  const [expanded, setExpanded] = React.useState<string | false>(false);
+
+  const handleChange = (panel: string) => (
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    event: React.ChangeEvent<{}>,
+    isExpanded: boolean
+  ) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <>
       <Head>
@@ -36,7 +46,10 @@ const Faq = () => {
         <Typography variant="h2" align="center">
           {t('TITLE_LABEL')}
         </Typography>
-        <Accordion defaultExpanded>
+        <Accordion
+          expanded={expanded === 'panel1'}
+          onChange={handleChange('panel1')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -50,7 +63,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_1_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel2'}
+          onChange={handleChange('panel2')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -64,7 +80,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_2_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel3'}
+          onChange={handleChange('panel3')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -83,7 +102,10 @@ const Faq = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel4'}
+          onChange={handleChange('panel4')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -97,7 +119,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_8_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel5'}
+          onChange={handleChange('panel5')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -111,7 +136,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_4_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel6'}
+          onChange={handleChange('panel6')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -125,7 +153,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_5_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel7'}
+          onChange={handleChange('panel7')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -139,7 +170,10 @@ const Faq = () => {
             <Typography>{t('ACCORDION_6_BODY_LABEL')}</Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === 'panel8'}
+          onChange={handleChange('panel8')}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
