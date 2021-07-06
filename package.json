@@ -36,6 +36,7 @@
     "next-i18next": "^7.0.1",
     "next-nprogress": "^1.4.0",
     "nprogress": "^0.2.0",
+    "postcss": "^8.3.5",
     "react": "17.0.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "17.0.1",
@@ -58,7 +59,6 @@
     "husky-git-emoji": "^1.0.1",
     "json-server": "^0.16.3",
     "lint-staged": "^10.5.4",
-    "postcss": "^8.2.6",
     "prettier": "^2.2.1",
     "tailwindcss": "^2.0.3",
     "typescript": "^4.1.5"
