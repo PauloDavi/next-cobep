@@ -74,39 +74,6 @@ const Dates = () => {
               <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.2, duration: 1.5, type: 'spring' }}
-              >
-                <Typography variant="body2" color="textSecondary">
-                  <s>{t('DATE_TUTORIALS_DEADLINE_LABEL')}</s>{' '}
-                  {t('DATE_TUTORIALS_DEADLINE_LABEL_CORRECT')}
-                </Typography>
-              </motion.div>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot color="secondary">
-                <InsertDriveFileOutlinedIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <motion.div
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 1.5, type: 'spring' }}
-              >
-                <Paper elevation={3} className="px-6 py-3">
-                  <Typography variant="h6" component="h1">
-                    {t('TUTORIALS_DEADLINE_LABEL')}
-                  </Typography>
-                </Paper>
-              </motion.div>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent className="mt-2">
-              <motion.div
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
@@ -115,7 +82,7 @@ const Dates = () => {
               </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="primary">
+              <TimelineDot color="secondary">
                 <NotificationsNoneOutlinedIcon className="text-white" />
               </TimelineDot>
               <TimelineConnector />
@@ -147,7 +114,7 @@ const Dates = () => {
               </motion.div>
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="secondary">
+              <TimelineDot color="primary">
                 <DescriptionOutlinedIcon className="text-white" />
               </TimelineDot>
               <TimelineConnector />
@@ -161,6 +128,39 @@ const Dates = () => {
                 <Paper elevation={3} className="px-6 py-3">
                   <Typography variant="h6" component="h1">
                     {t('RESUME_DEADLINE_LABEL')} ({t('INDUSTRY_SESSION_LABEL')})
+                  </Typography>
+                </Paper>
+              </motion.div>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent className="mt-2">
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 1.5, type: 'spring' }}
+              >
+                <Typography variant="body2" color="textSecondary">
+                  <s>{t('DATE_TUTORIALS_DEADLINE_LABEL')}</s>{' '}
+                  {t('DATE_TUTORIALS_DEADLINE_LABEL_CORRECT')}
+                </Typography>
+              </motion.div>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot color="secondary">
+                <InsertDriveFileOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 1.5, type: 'spring' }}
+              >
+                <Paper elevation={3} className="px-6 py-3">
+                  <Typography variant="h6" component="h1">
+                    {t('TUTORIALS_DEADLINE_LABEL')}
                   </Typography>
                 </Paper>
               </motion.div>

@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     imageCard: {
       width: '100%',
-      height: 350,
+      height: 380,
       padding: 15,
       display: 'flex',
       flexDirection: 'column',
@@ -267,12 +267,12 @@ const CallForPaper = () => {
                   <strong>{t('TEXT_DATE_2_LABEL')}</strong>{' '}
                   <s>{t('DATE_2_LABEL')}</s> {t('DATE_2_LABEL_CORRECT')}
                   <br />
-                  <strong>{t('TEXT_DATE_3_LABEL')}</strong>{' '}
-                  <s>{t('DATE_3_LABEL')}</s> {t('DATE_3_LABEL_CORRECT')}
-                  <br />
                   <strong>{t('TEXT_DATE_4_LABEL')}</strong> {t('DATE_4_LABEL')}
                   <br />
                   <strong>{t('TEXT_DATE_6_LABEL')}</strong> {t('DATE_6_LABEL')}
+                  <br />
+                  <strong>{t('TEXT_DATE_3_LABEL')}</strong>{' '}
+                  <s>{t('DATE_3_LABEL')}</s> {t('DATE_3_LABEL_CORRECT')}
                   <br />
                   <strong>{t('TEXT_DATE_5_LABEL')}</strong> {t('DATE_5_LABEL')}
                   <br />
