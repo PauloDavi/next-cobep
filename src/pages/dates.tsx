@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 
 import {
   Timeline,
@@ -22,6 +22,7 @@ import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
 import InsertDriveFileOutlinedIcon from '@material-ui/icons/InsertDriveFileOutlined';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Dates = () => {
   const { t } = useTranslation('dates');
@@ -214,12 +215,16 @@ const Dates = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['dates', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'dates',
+    ])),
+  },
+});
 
 export default Dates;

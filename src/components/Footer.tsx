@@ -18,8 +18,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { motion } from 'framer-motion';
 
-import { useTranslation } from '../../i18n';
-import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -245,14 +244,6 @@ const Footer = () => {
       </footer>
     </motion.div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['footer', 'common'],
-    },
-  };
 };
 
 export default Footer;

@@ -9,15 +9,15 @@ import {
   Typography,
   Button,
 } from '@material-ui/core';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import clsx from 'clsx';
 
 import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
-import { strict } from 'assert';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -383,12 +383,16 @@ const CallForPaper = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['callForPaper', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'callForPaper',
+    ])),
+  },
+});
 
 export default CallForPaper;

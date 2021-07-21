@@ -12,8 +12,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import { useTranslation } from '../../i18n';
-import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -176,14 +175,6 @@ const Organization = () => {
       </Grid>
     </div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['footerImages', 'common'],
-    },
-  };
 };
 
 export default Organization;

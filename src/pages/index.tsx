@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 
@@ -26,6 +26,7 @@ import Image from 'next/image';
 import Partners from '../components/Partners';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -211,12 +212,17 @@ const Home = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['index', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'footerImages',
+      'index',
+    ])),
+  },
+});
 
 export default Home;

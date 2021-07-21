@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Card, Grid, useTheme } from '@material-ui/core';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Organization from '../components/Organization';
@@ -9,6 +9,7 @@ import Partners from '../components/Partners';
 import TechnicalSupport from '../components/TechnicalSupport';
 import { motion } from 'framer-motion';
 import Realization from '../components/Realization';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Sponsors = () => {
   const theme = useTheme();
@@ -470,12 +471,17 @@ const Sponsors = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['sponsors', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'footerImages',
+      'sponsors',
+    ])),
+  },
+});
 
 export default Sponsors;

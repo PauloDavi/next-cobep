@@ -1,4 +1,4 @@
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -9,6 +9,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -29,13 +30,15 @@ const Faq = () => {
 
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
-  const handleChange = (panel: string) => (
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    event: React.ChangeEvent<{}>,
-    isExpanded: boolean
-  ) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+  const handleChange =
+    (panel: string) =>
+    (
+      // eslint-disable-next-line @typescript-eslint/ban-types
+      event: React.ChangeEvent<{}>,
+      isExpanded: boolean
+    ) => {
+      setExpanded(isExpanded ? panel : false);
+    };
 
   return (
     <>
@@ -192,12 +195,16 @@ const Faq = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['faq', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'faq',
+    ])),
+  },
+});
 
 export default Faq;

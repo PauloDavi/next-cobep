@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
-import { GetStaticProps } from 'next';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {
   ThemeProvider,
@@ -12,7 +11,7 @@ import { create } from 'jss';
 import { AnimatePresence } from 'framer-motion';
 import ScrollToTop from 'react-scroll-up';
 
-import { appWithTranslation, useTranslation } from '../../i18n';
+import { appWithTranslation, useTranslation } from 'next-i18next';
 import { Tooltip } from '@material-ui/core';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -50,14 +49,18 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <AnimatePresence exitBeforeEnter>
           <Header key="header" />
           <CssBaseline key="cssBaseLine" />
-          <div className="mb-auto min-h-screen">
+          <div key="main" className="mb-auto min-h-screen">
             <Head>
               <title>COBEP</title>
             </Head>
             <Component {...pageProps} />
           </div>
           <Footer key="footer" />
-          <ScrollToTop style={{ bottom: 0, right: 30 }} showUnder={160}>
+          <ScrollToTop
+            key="scroll-button"
+            style={{ bottom: 0, right: 30 }}
+            showUnder={160}
+          >
             <Tooltip title={t('BACK_TO_BEGIN') as string}>
               <div className="bg-gray-800 bg-opacity-75 p-1 rounded-t-md">
                 <ExpandLessIcon color="primary" />
@@ -68,14 +71,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       </ThemeProvider>
     </StylesProvider>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['common'],
-    },
-  };
 };
 
 export default appWithTranslation(MyApp);

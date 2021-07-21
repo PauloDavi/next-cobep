@@ -14,9 +14,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import { i18n, withTranslation } from '../../i18n';
-import { TFunction } from 'next-i18next';
-import { GetStaticProps } from 'next';
+import { TFunction, i18n, withTranslation } from 'next-i18next';
 
 const languages = ['en', 'pt', 'es'];
 
@@ -41,16 +39,16 @@ const LanguageSwitcher = ({ t }: { readonly t: TFunction }): JSX.Element => {
     switch (locale) {
       case 'en':
         setCurrentLanguage(0);
-        i18n.changeLanguage('en');
+        i18n?.changeLanguage('en');
         break;
       case 'pt':
         setCurrentLanguage(1);
-        i18n.changeLanguage('pt');
+        i18n?.changeLanguage('pt');
         console.log(languages[currentLanguage]);
         break;
       case 'es':
         setCurrentLanguage(2);
-        i18n.changeLanguage('es');
+        i18n?.changeLanguage('es');
         break;
       default:
         setCurrentLanguage(1);
@@ -67,7 +65,7 @@ const LanguageSwitcher = ({ t }: { readonly t: TFunction }): JSX.Element => {
       >
         <Image
           priority
-          src={`/static/flags/${languages[currentLanguage]}.svg`}
+          src={`/images/flags/${languages[currentLanguage]}.svg`}
           alt={t(languages[currentLanguage])}
           width={21}
           height={21}
@@ -102,7 +100,7 @@ const LanguageSwitcher = ({ t }: { readonly t: TFunction }): JSX.Element => {
             <ListItemIcon>
               <Image
                 priority
-                src={`/static/flags/${lng}.svg`}
+                src={`/images/flags/${lng}.svg`}
                 alt={t(lng)}
                 width={21}
                 height={21}
@@ -114,14 +112,6 @@ const LanguageSwitcher = ({ t }: { readonly t: TFunction }): JSX.Element => {
       </Popover>
     </>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['languageSwitcher'],
-    },
-  };
 };
 
 export default withTranslation('languageSwitcher')(LanguageSwitcher);

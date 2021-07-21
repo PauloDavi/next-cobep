@@ -4,7 +4,7 @@ import { Button, MenuItem, Typography, Menu } from '@material-ui/core';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import ExpandLessOutlinedIcon from '@material-ui/icons/ExpandLessOutlined';
 import Link from 'next/link';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 
 interface MenuProps {
   children: {

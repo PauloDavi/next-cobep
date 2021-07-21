@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>

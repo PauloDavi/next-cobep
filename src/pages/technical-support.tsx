@@ -1,11 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { Grid, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import { GetStaticProps } from 'next';
 import { motion } from 'framer-motion';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const supports = [
   {
@@ -147,12 +148,16 @@ const TechnicalSupport = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['technical-support', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'technical-support',
+    ])),
+  },
+});
 
 export default TechnicalSupport;

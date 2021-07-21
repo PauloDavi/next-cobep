@@ -1,7 +1,8 @@
 import { Card, Grid, Typography, Button } from '@material-ui/core';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Models = () => {
   const { t } = useTranslation('models');
@@ -128,12 +129,16 @@ const Models = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['models', 'common'],
-    },
-  };
-};
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'header',
+      'footer',
+      'common',
+      'languageSwitcher',
+      'models',
+    ])),
+  },
+});
 
 export default Models;

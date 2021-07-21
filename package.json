@@ -33,7 +33,7 @@
     "jss-plugin-extend": "^10.5.1",
     "jss-rtl": "^0.3.0",
     "next": "10.0.7",
-    "next-i18next": "^7.0.1",
+    "next-i18next": "^8.5.5",
     "next-nprogress": "^1.4.0",
     "nprogress": "^0.2.0",
     "postcss": "^8.2.10",

@@ -1,22 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { nextI18NextRewrites } = require('next-i18next/rewrites');
-
-const localeSubpaths = {};
+const { i18n } = require('./next-i18next.config');
 
 module.exports = {
-  rewrites: async () => nextI18NextRewrites(localeSubpaths),
-  publicRuntimeConfig: {
-    localeSubpaths,
-  },
+  i18n,
 
   images: {
     domains: ['www.ieee-ecce.org'],
   },
 
   esModule: true,
-
-  i18n: {
-    locales: ['en', 'es', 'pt'],
-    defaultLocale: 'pt',
-  },
 };

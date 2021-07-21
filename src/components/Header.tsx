@@ -32,10 +32,9 @@ import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 
 import { useRouter } from 'next/router';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 
 import pages from './pages';
-import { GetStaticProps } from 'next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -224,12 +223,8 @@ const Header = () => {
                     );
                   } else {
                     return (
-                      <Link href={pageURL || '/'}>
-                        <Button
-                          key={menuTitleTranslate}
-                          variant="text"
-                          color="inherit"
-                        >
+                      <Link key={menuTitleTranslate} href={pageURL || '/'}>
+                        <Button variant="text" color="inherit">
                           {t(menuTitleTranslate)}
                         </Button>
                       </Link>
@@ -244,14 +239,6 @@ const Header = () => {
       </AppBar>
     </div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      namespacesRequired: ['header', 'common'],
-    },
-  };
 };
 
 export default Header;
