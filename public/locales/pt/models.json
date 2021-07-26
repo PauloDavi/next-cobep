@@ -30,5 +30,11 @@
   "TEXT_BODY_LI_TUTORIALS_1_LABEL": "Máximo de 5 páginas.",
   "TEXT_BODY_LI_TUTORIALS_2_LABEL": "Todas as páginas são formatadas com margens de uma polegada de cada lado.",
   "TEXT_BODY_LI_TUTORIALS_3_LABEL": "Todos os textos usam espaço simples, Times New Roman, tinta preta e um tamanho de fonte de 11 ou 12.",
-  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga o item no documento modelo"
+  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga o item no documento modelo",
+  "CONFERENCE_TEMPLATE_P1_LABEL": "O Artigo final deve estar em inglês",
+  "CONFERENCE_TEMPLATE_TITLE_1_LABEL": "TAMANHO DO ARTIGO",
+  "CONFERENCE_TEMPLATE_ITEM_1_LABEL": "ARTIGO INCLUÍDO APENAS nos anais do COBEP: A extensão dos artigo é de no máximo quatro (4) páginas. Isso não inclui as referências.",
+  "CONFERENCE_TEMPLATE_ITEM_2_LABEL": "ARTIGOS incluídos na Biblioteca Digital IEEE Xplore: A extensão dos artigos do IEEE é de no máximo oito (8) páginas no total. Isso inclui referências e apêndices. Artigos com mais de oito páginas serão rejeitados.",
+  "CONFERENCE_TEMPLATE_TITLE_2_LABEL": "INSCRIÇÃO NO CONGRESSO",
+  "CONFERENCE_TEMPLATE_P2_LABEL": "O COBEP 2021 exige que todos os artigos aceitos estejam vinculados a uma inscrição de AUTOR (ou seja, não uma inscrição estudante ou inscrição de participante) por um dos autores do artigo. A inscrição de AUTOR permite a submissão de trabalho de autoria própria e permite a inclusão de um (apenas 1) trabalho extra com o pagamento adicional."
 }

@@ -30,5 +30,11 @@
   "TEXT_BODY_LI_TUTORIALS_1_LABEL": "Máximo de 5 páginas",
   "TEXT_BODY_LI_TUTORIALS_2_LABEL": "Todas las páginas están formateadas con márgenes de una pulgada en cada lado.",
   "TEXT_BODY_LI_TUTORIALS_3_LABEL": "Todos los textos usan espacio simple, Times New Roman, tinta negra y un tamaño de fuente de 11 o 12",
-  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga el elemento en el documento modelo"
+  "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Siga el elemento en el documento modelo",
+  "CONFERENCE_TEMPLATE_P1_LABEL": "El artículo final debe estar en inglés",
+  "CONFERENCE_TEMPLATE_TITLE_1_LABEL": "TAMAÑO DEL ARTÍCULO",
+  "CONFERENCE_TEMPLATE_ITEM_1_LABEL": "ARTÍCULO INCLUIDO SOLO EN Actas de COBEP: La extensión de los artículos es un máximo de cuatro (4) páginas. No incluye referencias",
+  "CONFERENCE_TEMPLATE_ITEM_2_LABEL": "Artículos incluidos en la Biblioteca digital IEEE Xplore: La extensión de los artículos IEEE es de un máximo de ocho (8) páginas en total. Esto incluye referencias y apéndices. Los artículos de más de ocho páginas serán rechazados.",
+  "CONFERENCE_TEMPLATE_TITLE_2_LABEL": "REGISTRO AL CONGRESO",
+  "CONFERENCE_TEMPLATE_P2_LABEL": "COBEP 2021 requiere que todos los artículos aceptados estén vinculados a un envío de AUTOR (es decir, no un envío de estudiante o participante) por uno de los autores del artículo. El envío de AUTOR permite el envío de artículos escritos y permite la inclusión de uno (solo 1) trabajo extra con pago adicional."
 }

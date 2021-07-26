@@ -197,7 +197,11 @@ const Header = () => {
                                 setMenuIsOpen(false);
                                 handleButtonClick(item.pageURL);
                               }}
-                              primary={t(item.menuTitleTranslate)}
+                              primary={
+                                <Typography>
+                                  {t(item.menuTitleTranslate)}
+                                </Typography>
+                              }
                             />
                           </ListItem>
                         </List>

@@ -8,15 +8,14 @@
   "ACCORDION_3_TITLE_LABEL": "Existe algum modelo para elaboração dos resumos?",
   "ACCORDION_3_BODY_LABEL": "Sim. O modelo em .doc e .tex estão disponíveis no link: ",
   "ACCORDION_4_TITLE_LABEL": "O pagamento da inscrição deve ser feito antes da submissão final do artigo?",
-  "ACCORDION_4_BODY_LABEL": "Em breve...",
+  "ACCORDION_4_BODY_LABEL": "Sim. O COBEP 2021 exige que todos os artigos aceitos estejam vinculados a uma inscrição de AUTOR (ou seja, não uma inscrição estudante ou inscrição de participante) por um dos autores do artigo. A inscrição de AUTOR permite a submissão de trabalho de autoria própria e permite a inclusão de um (apenas 1) trabalho extra com o pagamento adicional.",
   "ACCORDION_5_TITLE_LABEL": "Os artigos finais serão publicados ?",
-  "ACCORDION_5_BODY_LABEL": "Somente os artigos da versão final estendida serão publicados na Biblioteca Digital IEEE Xplore.",
+  "ACCORDION_5_1_BODY_LABEL": "ARTIGOS incluídos APENAS nos anais do COBEP: A extensão dos artigo é de no máximo quatro (4) páginas. Isso não inclui as referências;",
+  "ACCORDION_5_2_BODY_LABEL": "ARTIGOS incluídos na Biblioteca Digital IEEE Xplore: A extensão dos artigos do IEEE é de no máximo oito (8) páginas no total. Isso inclui referências e apêndices. Artigos com mais de oito páginas serão rejeitados.",
   "ACCORDION_6_TITLE_LABEL": "O pagamento da inscrição presencial/virtual terá o mesmo valor?",
-  "ACCORDION_6_BODY_LABEL": "Em breve...",
+  "ACCORDION_6_BODY_LABEL": "Não, as inscrições possuem valore diferentes. Consulte: ",
   "ACCORDION_7_TITLE_LABEL": "Posso submeter mais de um trabalho com uma mesma inscrição?",
-  "ACCORDION_7_BODY_LABEL": "Em breve...",
+  "ACCORDION_7_BODY_LABEL": "A inscrição de autor permite a submissão de trabalho de autoria própria e permite a inclusão de um (apenas 1) artigo extra com o pagamento adicional.",
   "ACCORDION_8_TITLE_LABEL": "Como funcionará a plataforma virtual?",
-  "ACCORDION_8_BODY_LABEL": "Em breve...",
-  "ACCORDION_9_TITLE_LABEL": "Como os autores devem preparar a apresentação?",
-  "ACCORDION_9_BODY_LABEL": "Em breve..."
+  "ACCORDION_8_BODY_LABEL": "Em breve..."
 }

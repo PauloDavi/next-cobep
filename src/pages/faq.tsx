@@ -100,7 +100,9 @@ const Faq = () => {
             <Typography>
               {t('ACCORDION_3_BODY_LABEL')}
               <Link href="https://cobep.vercel.app/models">
-                <a target="_blank">https://cobep.vercel.app/models</a>
+                <a className="hover:underline" target="_blank">
+                  https://cobep.vercel.app/models
+                </a>
               </Link>
             </Typography>
           </AccordionDetails>
@@ -153,7 +155,14 @@ const Faq = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{t('ACCORDION_5_BODY_LABEL')}</Typography>
+            <ul className="list-disc">
+              <li className="ml-8">
+                <Typography>{t('ACCORDION_5_1_BODY_LABEL')}</Typography>
+              </li>
+              <li className="ml-8">
+                <Typography>{t('ACCORDION_5_2_BODY_LABEL')}</Typography>
+              </li>
+            </ul>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -170,7 +179,14 @@ const Faq = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{t('ACCORDION_6_BODY_LABEL')}</Typography>
+            <Typography>
+              {t('ACCORDION_6_BODY_LABEL')}
+              <Link href="https://cobep.vercel.app/registrations">
+                <a className="hover:underline" target="_blank">
+                  https://cobep.vercel.app/registrations
+                </a>
+              </Link>
+            </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
