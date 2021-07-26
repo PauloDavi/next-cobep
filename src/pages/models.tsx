@@ -16,7 +16,7 @@ const Models = () => {
         <h1 className="text-gray-600 text-6xl sm:text-8xl text-center">
           {t('MODELS_LABEL')}
         </h1>
-        <div className="mt-5mb-5 w-full px-8 py-5 text-white text-md leading-none">
+        <div className="mt-5 mb-5 w-full px-8 py-5 text-white text-md leading-none">
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <div className="flex justify-center">
@@ -105,6 +105,46 @@ const Models = () => {
                         className="underline text-yellow-600"
                       >
                         <>{t('TEXT_MODELS_LABEL')}</>.docx
+                      </a>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <div className="flex justify-center">
+                <Card elevation={5} className="px-5 pb-8 pt-5 h-full max-w-lg">
+                  <div className="text-xl font-bold text-center mb-5">
+                    <Typography variant="h5" color="secondary">
+                      {t('CONFERENCE_TEMPLATE_LABEL')}
+                    </Typography>
+                  </div>
+                  <p className="text-lg font-semibold">
+                    {t('TITLE_CONFERENCE_TEMPLATE_LABEL')}
+                  </p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      {t('CONFERENCE_TEMPLATE_ITEM_1_LABEL')}
+                    </li>
+                  </ul>
+                  <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      <a
+                        href="/documents/conference-template-a4.docx"
+                        download="COBEP-conference-template-latex.docx"
+                        className="underline text-yellow-600"
+                      >
+                        {t('TEXT_MODELS_LABEL')}.docx
+                      </a>
+                    </li>
+                    <li className="mt-2">
+                      <a
+                        href="/documents/conference-template-a4-latex.zip"
+                        download="COBEP-conference-template-latex.zip"
+                        className="underline text-yellow-600"
+                      >
+                        {t('TEXT_MODELS_LABEL')}.tex
                       </a>
                     </li>
                   </ul>

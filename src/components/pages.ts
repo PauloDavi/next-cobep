@@ -4,6 +4,10 @@ const pages = [
     pageURL: '/',
   },
   {
+    menuTitleTranslate: 'REGISTRATIONS_LABEL',
+    pageURL: '/registrations',
+  },
+  {
     menuTitleTranslate: 'REVIEWING_AUTHORS_LABEL',
     index: 0,
     children: [
