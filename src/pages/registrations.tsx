@@ -1,4 +1,4 @@
-import { Grid } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -460,6 +460,18 @@ export default function Registrations() {
               </Grid>
             </Grid>
           </div>
+        </div>
+
+        <div className="flex justify-center mb-8">
+          <a
+            href="https://cobep2021.softaliza.com.br/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="contained" color="secondary">
+              {t('SITEM_SUBMIT_BUTTON_LABEL')}
+            </Button>
+          </a>
         </div>
       </div>
     </>

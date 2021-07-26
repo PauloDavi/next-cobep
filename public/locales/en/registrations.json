@@ -17,7 +17,7 @@
   "TITLE_1_ITEM_5_4": "IEEE PELS.",
   "TITLE_2": "ADVANCE AMOUNT - UNTIL 09/30",
   "TITLE_3": "REGULAR VALUES",
-  "COLUMN_1": "PRESENCE",
+  "COLUMN_1": "PRESENTIAL",
   "COLUMN_2": "VIRTUAL",
   "ROW_1": "Member Author",
   "ROW_2": "Non-Member Author",
@@ -27,5 +27,6 @@
   "ROW_6": "Non-Member Student",
   "ROW_7": "Extra Item",
   "WARNING_1": "*Price for people from countries with HDI less than 0.851",
-  "WARNING_2": "*Price for people from countries with HDI greater than 0.851"
+  "WARNING_2": "*Price for people from countries with HDI greater than 0.851",
+  "SITEM_SUBMIT_BUTTON_LABEL": "Submission system"
 }

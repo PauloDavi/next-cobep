@@ -33,14 +33,9 @@ const Models = () => {
                   <p className="text-lg font-semibold mt-4">
                     {t('CONFERENCE_TEMPLATE_TITLE_1_LABEL')}
                   </p>
-                  <ul className="list-inside list-disc mb-4">
-                    <li className="mt-2">
-                      {t('CONFERENCE_TEMPLATE_ITEM_1_LABEL')}
-                    </li>
-                    <li className="mt-2">
-                      {t('CONFERENCE_TEMPLATE_ITEM_2_LABEL')}
-                    </li>
-                  </ul>
+                  <p className="mt-2 mb-4">
+                    {t('CONFERENCE_TEMPLATE_ITEM_1_LABEL')}
+                  </p>
 
                   <span className="text-lg font-semibold">
                     {t('CONFERENCE_TEMPLATE_TITLE_2_LABEL')}

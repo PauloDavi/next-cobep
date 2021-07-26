@@ -17,7 +17,7 @@
   "TITLE_1_ITEM_5_4": " IEEE PELS.",
   "TITLE_2": "CANTIDAD ANTICIPADA - HASTA EL 30/09",
   "TITLE_3": "VALORES REGULARES",
-  "COLUMN_1": "PRESENCIA",
+  "COLUMN_1": "PRESENCIAL",
   "COLUMN_2": "VIRTUAL",
   "ROW_1": "Autor del miembro",
   "ROW_2": "Autor no miembro",
@@ -27,5 +27,6 @@
   "ROW_6": "Estudiante no miembro",
   "ROW_7": "Elemento adicional",
   "WARNING_1": "* Precio para personas de países con un IDH inferior a 0,851",
-  "WARNING_2": "* Precio para personas de países con un IDH superior a 0,851"
+  "WARNING_2": "* Precio para personas de países con un IDH superior a 0,851",
+  "SITEM_SUBMIT_BUTTON_LABEL": "Sistema de envío"
 }
