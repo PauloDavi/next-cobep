@@ -33,7 +33,8 @@
   "TEXT_BODY_LI_TUTORIALS_4_LABEL": "Follow the item in the model document",
   "CONFERENCE_TEMPLATE_P1_LABEL": "The Final Article must be in English",
   "CONFERENCE_TEMPLATE_TITLE_1_LABEL": "ITEM SIZE",
-  "CONFERENCE_TEMPLATE_ITEM_1_LABEL": "Articles included in COBEP Proceedings and IEEEXplore Digital Library: The length of IEEE articles is a maximum of eight (8) pages in total. This includes references and appendices. Articles with more than eight pages will be rejected. ",
+  "CONFERENCE_TEMPLATE_ITEM_1_LABEL": " ARTICLES INCLUDED IN COBEP Proceedings ONLY: The length of the articles is a maximum of four (4) pages. This does not include references;",
+   "CONFERENCE_TEMPLATE_ITEM_2_LABEL": "Articles included in COBEP Proceedings and IEEEXplore Digital Library: The length of IEEE articles is a maximum of eight (8) pages in total. This includes references and appendices. Articles with more than eight pages will be rejected. ",
   "CONFERENCE_TEMPLATE_TITLE_2_LABEL": "CONGRESS REGISTRATION",
   "CONFERENCE_TEMPLATE_LABEL": "Final Version",
   "CONFERENCE_TEMPLATE_P2_LABEL": "COBEP 2021 requires all accepted papers to be linked to an AUTHOR submission (ie not a student or participant submission) by one of the paper's authors. The AUTHOR submission allows for paper submission authored and allows the inclusion of one (only 1) extra work with additional payment."
