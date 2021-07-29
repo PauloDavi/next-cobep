@@ -1,4 +1,4 @@
-import { Button, Grid } from '@material-ui/core';
+import { Button, Grid, Link } from '@material-ui/core';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -37,6 +37,30 @@ export default function Registrations() {
                 <strong>{t('TITLE_1_ITEM_5_2')}</strong>
                 {t('TITLE_1_ITEM_5_3')}
                 <strong>{t('TITLE_1_ITEM_5_4')}</strong>
+              </li>
+              <li>
+                {t('TITLE_1_ITEM_6')}
+                <ul className="list-disc ml-6">
+                  <li>{t('TITLE_1_ITEM_6_1')}</li>
+                  <li>{t('TITLE_1_ITEM_6_2')}</li>
+                  <li>
+                    {t('TITLE_1_ITEM_6_3')}{' '}
+                    <Link
+                      href="mailto:financeiro@microrredes.org.br"
+                      target="_blank"
+                    >
+                      financeiro@microrredes.org.br
+                    </Link>
+                  </li>
+                  <li>{t('TITLE_1_ITEM_6_4')}</li>
+                  <li>
+                    {t('TITLE_1_ITEM_6_5')}
+                    <ul className="list-disc ml-6">
+                      <li>{t('TITLE_1_ITEM_6_5_1')}</li>
+                      <li>{t('TITLE_1_ITEM_6_5_2')}</li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
