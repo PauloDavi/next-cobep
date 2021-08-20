@@ -34,6 +34,10 @@ const pages = [
     pageURL: '/sponsors',
   },
   {
+    menuTitleTranslate: 'HOTEL_LABEL',
+    pageURL: '/hotel',
+  },
+  {
     menuTitleTranslate: 'FAQ_LABEL',
     pageURL: '/faq',
   },
