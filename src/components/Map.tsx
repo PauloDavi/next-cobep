@@ -46,7 +46,15 @@ const RegularMap = withScriptjs(
       </GoogleMap>
     );
   })
-);
+) as React.ComponentClass<
+  {
+    googleMapURL: any;
+    loadingElement: any;
+    containerElement: any;
+    mapElement: any;
+  },
+  any
+>;
 
 const loadingElementStyle = { height: '100%' };
 const containerElementStyle = {
