@@ -35,23 +35,25 @@ const Faq = () => {
           >
             <div className="flex justify-center items-center">
               <Image src="/images/hotel/bar_do_lobby.png" layout="fill" />
-              <Typography className="text-white text-4xl">Parques</Typography>
+              <Typography className="text-white text-4xl">
+                Bar do lobby
+              </Typography>
             </div>
             <div className="flex justify-center items-center">
               <Image src="/images/hotel/fachada.jpg" layout="fill" />
-              <Typography className="text-white text-4xl">Parques</Typography>
+              <Typography className="text-white text-4xl">Fachada</Typography>
             </div>
             <div className="flex justify-center items-center">
               <Image src="/images/hotel/piscina.png" layout="fill" />
-              <Typography className="text-white text-4xl">Parques</Typography>
+              <Typography className="text-white text-4xl">Piscina</Typography>
             </div>
             <div className="flex justify-center items-center">
               <Image src="/images/hotel/recepcao.png" layout="fill" />
-              <Typography className="text-white text-4xl">Parques</Typography>
+              <Typography className="text-white text-4xl">Recepção</Typography>
             </div>
             <div className="flex justify-center items-center">
               <Image src="/images/hotel/soalrium.png" layout="fill" />
-              <Typography className="text-white text-4xl">Parques</Typography>
+              <Typography className="text-white text-4xl">Soalrium</Typography>
             </div>
           </AutoplaySlider>
         </div>
@@ -59,37 +61,21 @@ const Faq = () => {
         <div className="max-w-4xl w-full mx-auto mb-8">
           <h2 className="mt-8 text-4xl font-bold">Hotel Manaíra</h2>
 
-          <div className="mt-2 text-lg">
-            O Hotel Manaíra está situado a pouco metros da praia, em uma das
-            principais avenidas da cidade, próximo a shoppings, boutiques, bares
-            e restaurantes. Com um conceito contemporâneo, sofisticado e
-            cuidadoso, nossos detalhes transformam cada hospedagem em uma
-            experiência inesquecível para tornar sua vinda ainda mais prazerosa
-          </div>
+          <div className="mt-2 text-lg">{t('description_1')}</div>
 
           <div className="flex flex-col items-center mx-auto my-8 max-w-5xl">
             <Paper elevation={3} className="p-6">
               <ul className="list-disc ml-4">
-                <li className="text-lg">
-                  O desconto de 25% será aplicado na categoria Superior;
-                </li>
+                <li className="text-lg">{t('list_1_1')}</li>
+                <li className="mt-2 text-lg">{t('list_1_2')}</li>
+                <li className="mt-2 text-lg">{t('list_1_3')}</li>
+                <li className="mt-2 text-lg">{t('list_1_4')}</li>
+                <li className="mt-2 text-lg">{t('list_1_5')}</li>
                 <li className="mt-2 text-lg">
-                  O desconto não é acumulativo com outras promoções;
-                </li>
-                <li className="mt-2 text-lg">
-                  Necessário informar que deseja o desconto do evento COBEP;
-                </li>
-                <li className="mt-2 text-lg">Café da manhã incluso;</li>
-                <li className="mt-2 text-lg">Estacionamento incluso;</li>
-                <li className="mt-2 text-lg">
-                  Reserva através do telefone/whatsapp{' '}
-                  <strong>(83) 3021-9704</strong> ou e-mail{' '}
-                  <strong className="hover:underline">
-                    <a href="mailto:reservas@hotelmanaira.com.br">
-                      reservas@hotelmanaira.com.br
-                    </a>
-                  </strong>
-                  .
+                  <div
+                    className="content"
+                    dangerouslySetInnerHTML={{ __html: t('list_1_6') }}
+                  />
                 </li>
               </ul>
             </Paper>

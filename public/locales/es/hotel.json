@@ -1,3 +1,10 @@
 {
-  "PAGE_TITLE_LABEL": "Hotel"
+  "PAGE_TITLE_LABEL": "Hotel",
+  "description_1": "El Hotel Manaíra está ubicado a pocos metros de la playa, en una de las principales avenidas de la ciudad, cerca de centros comerciales, boutiques, bares y restaurantes. Con un concepto contemporáneo, sofisticado y cuidado, nuestros detalles transforman cada alojamiento en una experiencia inolvidable para hacer aún más placentera tu visita ",
+  "list_1_1": "El descuento del 25% se aplicará en la categoría Superior;",
+  "list_1_2": "El descuento no es acumulable con otras promociones;",
+  "list_1_3": "Es necesario informar que quieres el descuento del evento COBEP;",
+  "list_1_4": "Desayuno incluido;",
+  "list_1_5": "Aparcamiento incluido;",
+  "list_1_6": "Reserva por teléfono/whatsapp <strong>(83) 3021-9704</strong> o por correo electrónico <strong className=\"hover:underline\"><a href=\"mailto:reservas@hotelmanaira.com.br\">reservas@hotelmanaira.com.br</a></strong>."
 }
