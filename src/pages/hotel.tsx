@@ -61,7 +61,8 @@ const Faq = () => {
         <div className="max-w-4xl w-full mx-auto mb-8">
           <h2 className="mt-8 text-4xl font-bold">Hotel Manaíra</h2>
 
-          <div className="mt-2 text-lg">{t('description_1')}</div>
+          <p className="mt-2 text-lg">{t('alert_1')}</p>
+          <p className="mt-2 text-lg">{t('description_1')}</p>
 
           <div className="flex flex-col items-center mx-auto my-8 max-w-5xl">
             <Paper elevation={3} className="p-6">

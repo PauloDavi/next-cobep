@@ -52,6 +52,21 @@ export default function Registrations() {
                       financeiro@microrredes.org.br
                     </Link>
                   </li>
+                  <li>
+                    {t('TITLE_1_ITEM_6_3_1')}
+                    <Link href="mailto:victor@cear.ufpb.br" target="_blank">
+                      victor@cear.ufpb.br
+                    </Link>
+                  </li>
+                  <li>
+                    {t('TITLE_1_ITEM_6_3_2')}
+                    <Link
+                      href="mailto:contato@softaliza.com.br"
+                      target="_blank"
+                    >
+                      contato@softaliza.com.br
+                    </Link>
+                  </li>
                   <li>{t('TITLE_1_ITEM_6_4')}</li>
                   <li>
                     {t('TITLE_1_ITEM_6_5')}
