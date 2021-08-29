@@ -175,7 +175,8 @@ const Dates = () => {
                 transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}
+                  <s>{t('DATE_FINAL_SUBMISSION_DEADLINE_LABEL')}</s>{' '}
+                  {t('FINAL_SUBMISSION_DEADLINE_NEW_LABEL')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
