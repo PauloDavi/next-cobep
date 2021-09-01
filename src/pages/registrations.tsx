@@ -43,30 +43,6 @@ export default function Registrations() {
                 <ul className="list-disc ml-6">
                   <li>{t('TITLE_1_ITEM_6_1')}</li>
                   <li>{t('TITLE_1_ITEM_6_2')}</li>
-                  <li>
-                    {t('TITLE_1_ITEM_6_3')}{' '}
-                    <Link
-                      href="mailto:financeiro@microrredes.org.br"
-                      target="_blank"
-                    >
-                      financeiro@microrredes.org.br
-                    </Link>
-                  </li>
-                  <li>
-                    {t('TITLE_1_ITEM_6_3_1')}
-                    <Link href="mailto:victor@cear.ufpb.br" target="_blank">
-                      victor@cear.ufpb.br
-                    </Link>
-                  </li>
-                  <li>
-                    {t('TITLE_1_ITEM_6_3_2')}
-                    <Link
-                      href="mailto:contato@softaliza.com.br"
-                      target="_blank"
-                    >
-                      contato@softaliza.com.br
-                    </Link>
-                  </li>
                   <li>{t('TITLE_1_ITEM_6_4')}</li>
                   <li>
                     {t('TITLE_1_ITEM_6_5')}
@@ -76,6 +52,27 @@ export default function Registrations() {
                     </ul>
                   </li>
                 </ul>
+              </li>
+              <li>
+                {t('TITLE_1_ITEM_6_3')}{' '}
+                <Link
+                  href="mailto:financeiro@microrredes.org.br"
+                  target="_blank"
+                >
+                  financeiro@microrredes.org.br
+                </Link>
+              </li>
+              <li>
+                {t('TITLE_1_ITEM_6_3_1')}
+                <Link href="mailto:victor@cear.ufpb.br" target="_blank">
+                  victor@cear.ufpb.br
+                </Link>
+              </li>
+              <li>
+                {t('TITLE_1_ITEM_6_3_2')}
+                <Link href="mailto:contato@softaliza.com.br" target="_blank">
+                  contato@softaliza.com.br
+                </Link>
               </li>
             </ul>
           </div>
