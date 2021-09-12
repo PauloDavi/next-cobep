@@ -23,6 +23,10 @@ const pages = [
         menuTitleTranslate: 'MODELOS_LABEL',
         pageURL: '/models',
       },
+      {
+        menuTitleTranslate: 'SUBMISSIONS_LABEL',
+        pageURL: '/submissions',
+      },
     ],
   },
   {
