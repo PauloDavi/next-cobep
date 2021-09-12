@@ -7,7 +7,7 @@ import { Link } from '@material-ui/core';
 function Submissions() {
   return (
     <div className="mx-auto w-full max-w-5xl flex flex-col">
-      <h1 className="mt-8 text-2xl font-bold">
+      <h1 className="mt-8 text-2xl font-bold mx-4 lg:mx-0">
         Tutorial COBEP 2021 - Submissão do artigo final
       </h1>
 
