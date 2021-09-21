@@ -231,7 +231,7 @@ const Sponsors = () => {
                   transition={{ ease: 'easeOut', duration: 2 }}
                 >
                   <a
-                    href="https://www.bksv.com/pt"
+                    href="https://hbkworld.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
