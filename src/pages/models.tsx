@@ -163,9 +163,37 @@ const Models = () => {
                 </Card>
               </div>
             </Grid>
+            <Grid item xs={12} sm={6}>
+              <div className="flex justify-center">
+                <Card elevation={5} className="px-5 pb-8 pt-5 h-full max-w-lg">
+                  <div className="text-xl font-bold text-center mb-5">
+                    <Typography variant="h5" color="secondary">
+                      {t('MODEL_PRESENTATION_LABEL')}
+                    </Typography>
+                  </div>
+
+                  <div
+                    dangerouslySetInnerHTML={{ __html: t('MODEL_3_TEXT') }}
+                  />
+
+                  <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      <a
+                        href="/documents/COBEP_Template.pptx"
+                        download="COBEP_Template.pptx"
+                        className="underline text-yellow-600"
+                      >
+                        <>{t('TEXT_MODELS_LABEL')}</>.pptx
+                      </a>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+            </Grid>
           </Grid>
         </div>
-        <div className="flex justify-center mb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center mb-8">
           <a
             href="https://cobep2021.softaliza.com.br/"
             target="_blank"
@@ -173,6 +201,17 @@ const Models = () => {
           >
             <Button variant="contained" color="secondary">
               {t('SITEM_SUBMIT_BUTTON_LABEL')}
+            </Button>
+          </a>
+
+          <a
+            className="text-white ml-0 sm:ml-4 mt-4 sm:mt-0"
+            href="https://submissao.ciente.live/en/submission-cobep/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="contained" color="primary">
+              {t('SITEM_SUBMIT_VIDEO_BUTTON_LABEL')}
             </Button>
           </a>
         </div>
