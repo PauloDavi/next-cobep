@@ -209,7 +209,8 @@ const Dates = () => {
                 transition={{ delay: 0.6, duration: 1.5, type: 'spring' }}
               >
                 <Typography variant="body2" color="textSecondary">
-                  {t('FINAL_SUBMISSION_VIDEO_DEADLINE_LABEL')}
+                  <s>{t('FINAL_SUBMISSION_VIDEO_DEADLINE_LABEL')}</s>{' '}
+                  {t('FINAL_SUBMISSION_VIDEO_DEADLINE_LABEL_NEW')}
                 </Typography>
               </motion.div>
             </TimelineOppositeContent>
