@@ -92,9 +92,14 @@ const Home = () => {
         <div className="px-8 pb-16 pt-5 text-white text-md leading-none">
           <Grid container spacing={4}>
             <Grid item xs={12}>
-              <h1 className="text-center text-4xl md:text-5xl lg:text-6xl">
-                {t('TITLE_LABEL')}
-              </h1>
+              <div className="flex flex-col justify-center">
+                <h1 className="text-center text-4xl md:text-5xl lg:text-6xl">
+                  {t('TITLE_LABEL')}
+                </h1>
+                <span className="text-center mt-2 text-xl md:text-2xl lg:text-3xl">
+                  {t('SUB_TITLE_LABEL')}
+                </span>
+              </div>
             </Grid>
             <Grid item xs={12} sm={6}>
               <p className="text-xl">{t('DESCRIPTION_FIRST_LABEL')}</p>
@@ -104,7 +109,7 @@ const Home = () => {
               <p className="text-xl">{t('DESCRIPTION_THIRD_LABEL')}</p>
             </Grid>
             <Grid item xs={12}>
-              <div className="w-48" />
+              <div className="w-40" />
             </Grid>
             <Grid item xs={12}>
               <div className="flex justify-center">
@@ -117,6 +122,7 @@ const Home = () => {
                     className={classes.shadow}
                     variant="contained"
                     color="secondary"
+                    size="large"
                   >
                     {t('SITEM_SUBMIT_BUTTON_LABEL')}
                   </Button>

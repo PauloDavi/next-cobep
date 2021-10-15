@@ -42,6 +42,10 @@ const pages = [
     pageURL: '/hotel',
   },
   {
+    menuTitleTranslate: 'SPEAKERS_LABEL',
+    pageURL: '/speakers',
+  },
+  {
     menuTitleTranslate: 'FAQ_LABEL',
     pageURL: '/faq',
   },

@@ -43,7 +43,7 @@ class MyDocument extends Document<DocumentProps> {
           />
           <meta
             name="keywords"
-            content="cobep,ufpb,eletrônica de potencia,congresso,sg2,ppgee,pels,ias,sobraep,2021,joão pessoa"
+            content="cobep,ufpb,eletrônica de potência,congresso,sg2,ppgee,pels,ias,sobraep,2021,joão pessoa"
           />
           <meta name="robots" content="" />
           <meta name="revisit-after" content="7 day" />
