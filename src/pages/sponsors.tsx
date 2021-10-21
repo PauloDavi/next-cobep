@@ -30,6 +30,48 @@ const Sponsors = () => {
             transition={{ ease: 'easeOut', duration: 2 }}
           >
             <div className="flex flex-row items-center text-gray-600 ml-4">
+              <h3 className="ml-4 text-4xl sm:text-5xl">MASTER</h3>
+              <div className="bg-gray-600 h-1 mx-5 rounded-full w-full" />
+            </div>
+          </motion.div>
+          <div className="mx-10 my-5">
+            <Grid container spacing={2}>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.gov.br/cnpq/pt-br"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/cnpq.png"
+                        alt="keysight"
+                        height={150}
+                        width={351}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+            </Grid>
+          </div>
+        </section>
+        <section>
+          <motion.div
+            animate={{ y: [-50, 0], opacity: [0, 1] }}
+            transition={{ ease: 'easeOut', duration: 2 }}
+          >
+            <div className="flex flex-row items-center text-gray-600 ml-4">
               <Image
                 src="/images/medals/gold.png"
                 alt={t('GOLD_MEDAL_LABEL') as string}
@@ -42,6 +84,60 @@ const Sponsors = () => {
           </motion.div>
           <div className="mx-10 my-5">
             <Grid container spacing={2}>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://www.keysight.com.br"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/keysight.png"
+                        alt="keysight"
+                        height={100}
+                        width={280}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://rota2030.fundep.ufmg.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/fundep.png"
+                        alt="FUNDEP"
+                        height={100}
+                        width={245}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
               <Grid item>
                 <motion.div
                   animate={{ y: [-200, 0], opacity: [0, 1] }}
@@ -376,6 +472,33 @@ const Sponsors = () => {
                         alt="RTDS"
                         height={50}
                         width={138}
+                      />
+                    </Card>
+                  </a>
+                </motion.div>
+              </Grid>
+              <Grid item>
+                <motion.div
+                  animate={{ y: [-200, 0], opacity: [0, 1] }}
+                  transition={{ ease: 'easeOut', duration: 2 }}
+                >
+                  <a
+                    href="https://powersimtech.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card
+                      elevation={5}
+                      className="p-5"
+                      style={{
+                        backgroundColor: theme.palette.background.default,
+                      }}
+                    >
+                      <Image
+                        src="/images/sponsors/powersim.png"
+                        alt="powersim"
+                        height={50}
+                        width={65}
                       />
                     </Card>
                   </a>
