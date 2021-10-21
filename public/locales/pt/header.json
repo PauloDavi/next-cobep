@@ -9,6 +9,9 @@
   "SPONSORS_LABEL": "Patrocinadores",
   "HOTEL_LABEL": "Hotel",
   "FAQ_LABEL": "FAQ",
-  "SPEAKERS_LABEL": "palestrantes",
-  "SUBMISSIONS_LABEL": "Submissões"
+  "SPEAKERS_LABEL": "Palestrantes",
+  "SUBMISSIONS_LABEL": "Submissões",
+  "SCHEDULE_LABEL": "Programação",
+  "FULL_SCHEDULE_LABEL": "Programação completa",
+  "TUTORIALS_LABEL": "Tutoriais"
 }

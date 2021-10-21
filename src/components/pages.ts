@@ -9,7 +9,6 @@ const pages = [
   },
   {
     menuTitleTranslate: 'REVIEWING_AUTHORS_LABEL',
-    index: 0,
     children: [
       {
         menuTitleTranslate: 'CALL_FOR_PAPERS_LABEL',
@@ -42,8 +41,21 @@ const pages = [
     pageURL: '/hotel',
   },
   {
-    menuTitleTranslate: 'SPEAKERS_LABEL',
-    pageURL: '/speakers',
+    menuTitleTranslate: 'SCHEDULE_LABEL',
+    children: [
+      {
+        menuTitleTranslate: 'FULL_SCHEDULE_LABEL',
+        pageURL: '/schedule',
+      },
+      {
+        menuTitleTranslate: 'SPEAKERS_LABEL',
+        pageURL: '/speakers',
+      },
+      {
+        menuTitleTranslate: 'TUTORIALS_LABEL',
+        pageURL: '/tutorials',
+      },
+    ],
   },
   {
     menuTitleTranslate: 'FAQ_LABEL',
