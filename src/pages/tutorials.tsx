@@ -61,16 +61,19 @@ function Tutorials() {
       </Head>
       <div className="mx-auto w-full max-w-5xl my-8 flex flex-col">
         <Grid container className="px-8" spacing={2}>
-          {tutorials.map(({ title, minister, time, duration, description }) => (
-            <TutorialItem
-              key={title}
-              title={t(title)}
-              minister={t(minister)}
-              time={t(time)}
-              duration={t(duration)}
-              description={t(description)}
-            />
-          ))}
+          {tutorials.map(
+            ({ title, minister, time, duration, description }, index) => (
+              <TutorialItem
+                index={index}
+                key={title}
+                title={t(title)}
+                minister={t(minister)}
+                time={t(time)}
+                duration={t(duration)}
+                description={t(description)}
+              />
+            )
+          )}
         </Grid>
       </div>
     </>
