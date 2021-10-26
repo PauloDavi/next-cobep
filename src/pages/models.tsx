@@ -191,6 +191,34 @@ const Models = () => {
                 </Card>
               </div>
             </Grid>
+            <Grid item xs={12} sm={6}>
+              <div className="flex justify-center">
+                <Card elevation={5} className="px-5 pb-8 pt-5 h-full max-w-lg">
+                  <div className="text-xl font-bold text-center mb-5">
+                    <Typography variant="h5" color="secondary">
+                      Poster
+                    </Typography>
+                  </div>
+
+                  <div
+                    dangerouslySetInnerHTML={{ __html: t('MODEL_4_TEXT') }}
+                  />
+
+                  <p className="mt-8 font-semibold">{t('TEXT_MODELS_LABEL')}</p>
+                  <ul className="list-inside list-disc">
+                    <li className="mt-2">
+                      <a
+                        href="/documents/Poster_Template.pptx"
+                        download="Poster_Template.pptx"
+                        className="underline text-yellow-600"
+                      >
+                        <>{t('TEXT_MODELS_LABEL')}</>.pptx
+                      </a>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+            </Grid>
           </Grid>
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center mb-8">
