@@ -55,6 +55,18 @@ const pages = [
         menuTitleTranslate: 'TUTORIALS_LABEL',
         pageURL: '/tutorials',
       },
+      {
+        menuTitleTranslate: 'Energy Summit',
+        pageURL: 'https://www.sympla.com.br/energy-summit-2021__1373806',
+      },
+      {
+        menuTitleTranslate: 'schnaPYs',
+        pageURL: 'https://bit.ly/yp-cobep2021',
+      },
+      {
+        menuTitleTranslate: 'Wie PELS Breakfast',
+        pageURL: 'https://bit.ly/WIEbreakfast',
+      },
     ],
   },
   {
