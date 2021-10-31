@@ -57,7 +57,7 @@ const pages = [
       },
       {
         menuTitleTranslate: 'Energy Summit',
-        pageURL: 'https://www.sympla.com.br/energy-summit-2021__1373806',
+        pageURL: '/energy-summit',
       },
       {
         menuTitleTranslate: 'schnaPYs',
@@ -65,7 +65,7 @@ const pages = [
       },
       {
         menuTitleTranslate: 'Wie PELS Breakfast',
-        pageURL: 'https://bit.ly/WIEbreakfast',
+        pageURL: '/ieee-pels-wie-breakfast',
       },
     ],
   },
