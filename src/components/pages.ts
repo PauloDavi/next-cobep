@@ -61,7 +61,7 @@ const pages = [
       },
       {
         menuTitleTranslate: 'schnaPYs',
-        pageURL: 'https://bit.ly/yp-cobep2021',
+        pageURL: '/schna-pys',
       },
       {
         menuTitleTranslate: 'Wie PELS Breakfast',
