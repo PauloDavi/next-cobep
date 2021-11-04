@@ -13,5 +13,7 @@
   "SUBMISSIONS_LABEL": "Envíos",
   "SCHEDULE_LABEL": "Programación",
   "FULL_SCHEDULE_LABEL": "Programación completa",
-  "TUTORIALS_LABEL": "Tutoriales"
+  "TUTORIALS_LABEL": "Tutoriales",
+  "TECHNICAL_PROGRAM_ONLINE_SESSION": "Programa técnico - sesiones en línea",
+  "TECHNICAL_PROGRAM_POSTER_SESSION": "Programa técnico - Sesiones de carteles"
 }

@@ -35,7 +35,10 @@ export function TutorialItem({
         <span className="text-xl my-2" style={{ whiteSpace: 'pre-line' }}>
           {duration}
         </span>
-        <p className="text-xl my-2" style={{ whiteSpace: 'pre-line' }}>
+        <p
+          className="text-xl my-2 text-justify"
+          style={{ whiteSpace: 'pre-line' }}
+        >
           {description}
         </p>
       </div>

@@ -56,6 +56,14 @@ const pages = [
         pageURL: '/tutorials',
       },
       {
+        menuTitleTranslate: 'TECHNICAL_PROGRAM_ONLINE_SESSION',
+        pageURL: '/technical-program-online_session',
+      },
+      {
+        menuTitleTranslate: 'TECHNICAL_PROGRAM_POSTER_SESSION',
+        pageURL: '/technical-program-poster-sessions',
+      },
+      {
         menuTitleTranslate: 'Energy Summit',
         pageURL: '/energy-summit',
       },
