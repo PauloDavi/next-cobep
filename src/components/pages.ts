@@ -15,6 +15,10 @@ const pages = [
         pageURL: '/call-for-paper',
       },
       {
+        menuTitleTranslate: 'HOW_WILL_THE_BE',
+        pageURL: '/how-will-the-be',
+      },
+      {
         menuTitleTranslate: 'DATE_LABEL',
         pageURL: '/dates',
       },
