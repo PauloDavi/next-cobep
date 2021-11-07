@@ -35,6 +35,10 @@ const useStyles = makeStyles((theme: Theme) =>
     shadow: {
       boxShadow: theme.shadows[10],
     },
+    shadowButton: {
+      boxShadow: theme.shadows[10],
+      fontSize: '1.5rem',
+    },
   })
 );
 
@@ -114,12 +118,12 @@ const Home = () => {
             <Grid item xs={12}>
               <div className="flex justify-center">
                 <a
-                  href="https://cobep2021.softaliza.com.br/"
+                  href="https://cobep2021.ciente.live"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Button
-                    className={classes.shadow}
+                    className={classes.shadowButton}
                     variant="contained"
                     color="secondary"
                     size="large"
