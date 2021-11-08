@@ -60,6 +60,10 @@ const pages = [
         pageURL: '/tutorials',
       },
       {
+        menuTitleTranslate: 'ROUND_TABLE_LABEL',
+        pageURL: '/round-table',
+      },
+      {
         menuTitleTranslate: 'TECHNICAL_PROGRAM_ONLINE_SESSION',
         pageURL: '/technical-program-online_session',
       },
