@@ -64,7 +64,11 @@ const supports = [
     people: [
       {
         name: 'Nady Rocha',
-        email: 'nady@cear.ufpb.br',
+        email: 'nadyrocha@cear.ufpb.br',
+      },
+      {
+        name: 'Lucas Hartmann',
+        email: 'lucas.hartmann@gmail.com',
       },
     ],
   },
@@ -89,6 +93,10 @@ const supports = [
       },
       {
         name: 'Joao Teixeira de Carvalho Neto (IFRN)',
+        email: '',
+      },
+      {
+        name: 'Edgard Luiz Lopes Fabricio - SUAP (IFPB)',
         email: '',
       },
     ],
