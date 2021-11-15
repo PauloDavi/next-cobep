@@ -41,8 +41,8 @@ const pages = [
     pageURL: '/sponsors',
   },
   {
-    menuTitleTranslate: 'HOTEL_LABEL',
-    pageURL: '/hotel',
+    menuTitleTranslate: 'PICTURES_LABEL',
+    pageURL: '/pictures',
   },
   {
     menuTitleTranslate: 'SCHEDULE_LABEL',

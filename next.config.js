@@ -5,7 +5,7 @@ module.exports = {
   i18n,
 
   images: {
-    domains: ['www.ieee-ecce.org'],
+    domains: ['www.ieee-ecce.org', '2010.filemail.com'],
   },
 
   esModule: true,
